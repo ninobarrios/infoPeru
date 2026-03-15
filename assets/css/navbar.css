@@ -38,7 +38,6 @@ a {
 }
 
 .container {
-    width: min(var(--container), calc(100% - 40px));
     margin: 0 auto;
 }
 
@@ -131,12 +130,13 @@ a {
 }
 
 /* Nav */
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    flex: 1;
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+    flex:1;
+    flex-wrap:wrap;
 }
 
 .nav__link {
