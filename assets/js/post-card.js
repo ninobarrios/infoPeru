@@ -43,8 +43,8 @@ class PostCard extends HTMLElement {
           <p class="postCard__desc">${description}</p>
 
           <div class="postCard__meta">
-            ${readtime ? `<span class="metaPill">⏱ ${readtime}</span>` : ""}
-            ${views ? `<span class="metaPill">👁 ${views}</span>` : ""}
+            ${readtime ? `<span class="metaPill"><i class="bi bi-stopwatch"></i> ${readtime}</span>` : ""}
+            ${views ? `<span class="metaPill"><i class="bi bi-eye"></i> ${views}</span>` : ""}
           </div>
         </div>
       </article>
