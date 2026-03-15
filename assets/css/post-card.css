@@ -1,0 +1,58 @@
+.chip {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer; /* 👈 manito */
+  transition: 
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Colores base */
+.chip--blue { background:#e0e7ff; color:#1d4ed8; }
+.chip--red { background:#fee2e2; color:#dc2626; }
+.chip--yellow { background:#fef3c7; color:#b45309; }
+.chip--green { background:#dcfce7; color:#16a34a; }
+.chip--purple { background:#ede9fe; color:#7c3aed; }
+.chip--white { background:#f3f4f6; color:#111827; }
+
+/* ===== Hover sofisticado ===== */
+.chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.15);
+}
+
+/* Hover específico por color (más intenso) */
+
+.chip--blue:hover {
+  background:#1d4ed8;
+  color:white;
+}
+
+.chip--red:hover {
+  background:#dc2626;
+  color:white;
+}
+
+.chip--yellow:hover {
+  background:#b45309;
+  color:white;
+}
+
+.chip--green:hover {
+  background:#16a34a;
+  color:white;
+}
+
+.chip--purple:hover {
+  background:#7c3aed;
+  color:white;
+}
+
+.chip--white:hover {
+  background:#111827;
+  color:white;
+}

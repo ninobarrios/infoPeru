@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trámites Personales – TrámitesPeru</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/post-card.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+
+</head>
+
+<body>
+    <header data-include="/componentes/navbar.html"></header>
+
+    <!-- Category Hero -->
+    <section class="catHero_finance">
+        <div class="container catHero__inner">
+
+            <nav class="crumbs" aria-label="breadcrumb">
+                <a href="/home/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                    </svg>
+                </a>
+                <span class="crumbs__sep">›</span>
+                <span>Finanzas y Beneficios</span>
+            </nav>
+
+            <div class="catHero__head">
+                <div class="catHero__badge" aria-hidden="true">
+                    <!-- doc icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-wallet" viewBox="0 0 16 16">
+                        <path
+                            d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1">
+                        </path>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="catHero__title">Finanzas y Beneficios</h1>
+                    <p class="catHero__sub">
+                        Todo sobre AFP, ONP, consultas SUNAT, bonos del Estado, retiro de fondos y beneficios económicos
+                        disponibles.
+                    </p>
+                    <div class="catHero__count">2 guías disponibles</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="catPage">
+        <div class="container catLayout">
+
+            <!-- Horizontal Ad -->
+            <div class="adBox adBox--h" role="note" aria-label="Publicidad">
+                <div class="adBox__label">PUBLICIDAD</div>
+                <div class="adBox__hint">Espacio para Google AdSense</div>
+            </div>
+
+            <!-- Main grid -->
+            <div class="catGrid">
+
+                <!-- Left: cards -->
+                <section class="catCards" aria-label="Listado de guías">
+                    <post-card title="Consulta RUC SUNAT: Cómo verificar y obtener tu RUC 2026"
+                        image="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800" tags='[
+    {"label":"Finanzas","color":"green"},
+    {"label":"Destacado","color":"yellow"}
+  ]' description="Aprende a consultar el RUC en SUNAT, verificar datos tributarios y cómo obtener tu número RUC paso a paso en Perú 2026."
+                        readtime="7 min de lectura" views="15,421" url="/tramitesCards/consulta-ruc.html">
+                    </post-card>
+
+                    <post-card title="Retiro AFP 2026: Cómo realizar el retiro tu dinero paso a paso"
+                        image="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800" tags='[
+    {"label":"Finanzas","color":"green"},
+    {"label":"Destacado","color":"yellow"}
+  ]' description="Todo sobre el retiro de fondos AFP en Perú 2026. Requisitos, montos máximos, plazos y cómo solicitar tu retiro de forma segura."
+                        readtime="7 min de lectura" views="15,421" url="/tramitesCards/consulta-afp.html">
+                    </post-card>
+                </section>
+
+                <!-- Right: sidebar -->
+                <aside class="catSide" aria-label="Sidebar">
+                    <div data-include="/componentes/site-sidebar.html"></div>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+    <div data-include="/componentes/site-footer.html"></div>
+    <script defer src="/assets/js/site-footer.js"></script>
+
+    <script src="script.js"></script>
+    <script src="/assets/js/includes.js"></script>
+    <script defer src="/assets/js/post-card.js"></script>
+    <script defer src="/assets/js/site-sidebar.js"></script>
+
+</body>
+
+</html>

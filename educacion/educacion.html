@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trámites Personales – TrámitesPeru</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/post-card.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+
+</head>
+
+<body>
+    <header data-include="/componentes/navbar.html"></header>
+
+
+    <!-- Category Hero -->
+    <section class="catHero_education">
+        <div class="container catHero__inner">
+
+            <nav class="crumbs" aria-label="breadcrumb">
+                <a href="/home/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                    </svg>
+                </a>
+                <span class="crumbs__sep">›</span>
+                <span>Educación y Empleo</span>
+            </nav>
+
+            <div class="catHero__head">
+                <div class="catHero__badge" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-mortarboard" viewBox="0 0 16 16">
+                        <path
+                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z">
+                        </path>
+                        <path
+                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="catHero__title">Educación y Empleo</h1>
+                    <p class="catHero__sub">
+                        Becas disponibles, certificados educativos, constancias de trabajo y oportunidades laborales en
+                        el sector público.
+                    </p>
+                    <div class="catHero__count">2 guías disponibles</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="catPage">
+        <div class="container catLayout">
+
+            <!-- Horizontal Ad -->
+            <div class="adBox adBox--h" role="note" aria-label="Publicidad">
+                <div class="adBox__label">PUBLICIDAD</div>
+                <div class="adBox__hint">Espacio para Google AdSense</div>
+            </div>
+
+            <!-- Main grid -->
+            <div class="catGrid">
+
+                <!-- Left: cards -->
+                <section class="catCards" aria-label="Listado de guías">
+                    <post-card title="Beca 18 Perú 2026: Requisitos y cómo postular"
+                        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+                        tags='[
+
+    {"label":"Educación","color":"yellow"}
+  ]' description="Todo sobre Beca 18: requisitos, cronograma de postulación 2026, universidades disponibles y cómo aumentar tus chances de ganar."
+                        readtime="7 min de lectura" views="15,421" url="/tramitesCards/beca18.html">
+                    </post-card>
+
+
+                </section>
+
+                <!-- Right: sidebar -->
+                <aside class="catSide" aria-label="Sidebar">
+                    <div data-include="/componentes/site-sidebar.html"></div>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+    <div data-include="/componentes/site-footer.html"></div>
+    <script defer src="/assets/js/site-footer.js"></script>
+    <script src="script.js"></script>
+    <script src="/assets/js/includes.js"></script>
+    <script defer src="/assets/js/post-card.js"></script>
+    <script defer src="/assets/js/site-sidebar.js"></script>
+
+</body>
+
+</html>

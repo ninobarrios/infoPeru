@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trámites Personales – TrámitesPeru</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/post-card.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/tramitescard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header data-include="/componentes/navbar.html"></header>
+
+    <main class="main">
+        <div class="container catLayout">
+            <div class="catGrid">
+                <section class="catCardsTramit" aria-label="Guia de Tramite">
+                    <nav class="crumbsTramit" aria-label="breadcrumb">
+                        <a href="/home/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                            </svg>
+                        </a>
+                        <span class="crumbs__sep">›</span>
+                        <span>Trámites Personales</span>
+                        <span class="crumbs__sep">›</span>
+                        <span class="font-medium">Consulta RUC SUNAT: Cómo verificar y obtener tu RUC 2026</span>
+                    </nav>
+                    <h1 class="textTitle">Consulta RUC SUNAT: Cómo verificar y obtener tu RUC 2026</h1>
+                    <p class="textDescription">Guía completa para consultar el estado del RUC en Perú. Conoce cómo verificar si un contribuyente está activo, los tipos de estado del RUC, cómo llenar el formulario de consulta y qué hacer si el RUC no aparece como activo y habido.</p>
+                    <article-meta date="16 de febrero, 2026" readtime="12 min de lectura" author="Equipo Editorial">
+                    </article-meta>
+
+                    <section class="article-hero">
+                        <article-actions></article-actions>
+
+                        <figure class="hero-figure" aria-hidden="false">
+                            <img class="hero-img"
+                                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1400&q=80"
+                                alt="Documentos y mesa de trabajo">
+                        </figure>
+                    </section>
+                    <section class="contenttramit" aria-label="Contenido del trámite" itemprop="articleBody">
+                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>¿Qué es este trámite?</h2>
+                        <p class="leading-relaxed">
+                            Este servicio permite consultar en línea el estado de un Registro Único de Contribuyente
+                            (RUC).
+                            Es útil para verificar si una persona o empresa está habilitada para realizar actividades
+                            económicas
+                            de manera regular ante la Sunat.
+                        </p>
+
+                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Quién debe realizarlo?</h2>
+                        <p class="leading-relaxed">
+                            Pueden usar esta consulta las personas naturales, empresas, emprendedores, contadores,
+                            proveedores o cualquier ciudadano que necesite verificar el estado actual de un RUC.
+                        </p>
+
+                        <section aria-labelledby="requisitos">
+                            <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>¿Qué necesitas?</h2>
+                            <ul style="margin: 15px;">
+                                <li class="gap-10">
+                                    <i class="bi bi-check-circle iconColorgreen"></i>
+                                    Tener uno de estos datos: número de RUC, número de DNI o razón social.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-check-circle iconColorgreen"></i>
+                                    Acceso a internet desde una computadora o celular.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-check-circle iconColorgreen"></i>
+                                    Ingresar correctamente la información solicitada en el formulario de consulta.
+                                </li>
+                            </ul>
+                        </section>
+
+                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>Estados del RUC</h2>
+                        <section class="tabla-docs-wrap">
+                            <table class="tabla-docs">
+                                <thead>
+                                    <tr>
+                                        <th>Estado</th>
+                                        <th>Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Activo</td>
+                                        <td>El RUC se encuentra habilitado para realizar actividades económicas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suspensión temporal</td>
+                                        <td>Las actividades están detenidas de forma temporal.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baja provisional</td>
+                                        <td>El RUC ha sido suspendido provisionalmente.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baja definitiva</td>
+                                        <td>El RUC fue dado de baja de forma permanente.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baja provisional de oficio</td>
+                                        <td>La Sunat realizó la baja provisional por decisión administrativa.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baja definitiva de oficio</td>
+                                        <td>La Sunat dio de baja el RUC de manera definitiva por oficio.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <h2 class="titleh2"><i class="bi bi-display iconColor"></i>Importante</h2>
+                        <div class="info-card blue">
+                            <p>
+                                <strong>Importante:</strong> Para realizar actividades económicas con normalidad, el RUC
+                                debe aparecer
+                                con estado <strong>activo</strong> y con condición de domicilio fiscal
+                                <strong>habido</strong>.
+                            </p>
+
+                            <p>
+                                Si el RUC no figura como activo y habido, será necesario comunicarte con Sunat para
+                                regularizar
+                                la situación.
+                            </p>
+                        </div>
+
+                        <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Paso a Paso</h2>
+                        <section class="container my-5">
+
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">1</div>
+                                        </div>
+                                        <div class="h-90">
+                                            <div class="numero-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Ingresa al servicio de consulta</h3>
+                                    <p>
+                                        Accede al portal de Sunat y ubica la opción de <strong>Consulta RUC</strong>.
+                                        Allí encontrarás un formulario para buscar información del contribuyente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">2</div>
+                                        </div>
+                                        <div class="h-90">
+                                            <div class="numero-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Elige el tipo de búsqueda</h3>
+                                    <p>
+                                        Puedes consultar por <strong>RUC</strong>, por <strong>documento</strong> o por
+                                        <strong>nombre o razón social</strong>, según la información que tengas
+                                        disponible.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">3</div>
+                                        </div>
+                                        <div class="h-90">
+                                            <div class="numero-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Completa los datos del formulario</h3>
+                                    <p>
+                                        Si eliges buscar por documento, primero selecciona el tipo de documento, por
+                                        ejemplo
+                                        <strong>DNI</strong>. Luego escribe el número correspondiente en el campo de
+                                        búsqueda.
+                                    </p>
+                                    <p>
+                                        Si buscas por RUC, ingresa directamente el número de RUC. Si eliges razón
+                                        social,
+                                        escribe el nombre de la empresa o persona registrada.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">4</div>
+                                        </div>
+                                        <div class="h-90">
+                                            <div class="numero-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Haz clic en “Buscar”</h3>
+                                    <p>
+                                        Después de ingresar los datos, presiona el botón <strong>Buscar</strong> para
+                                        que
+                                        el sistema muestre la información disponible del RUC consultado.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Revisa el estado y la condición del RUC</h3>
+                                    <p>
+                                        Verifica si el contribuyente aparece con estado <strong>activo</strong> y
+                                        condición
+                                        de domicilio fiscal <strong>habido</strong>. Si no es así, será necesario
+                                        regularizar
+                                        la situación ante Sunat.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>Cómo llenar el formulario</h2>
+                        <section class="tabla-docs-wrap">
+                            <table class="tabla-docs">
+                                <thead>
+                                    <tr>
+                                        <th>Campo</th>
+                                        <th>Qué debes hacer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tipo de búsqueda</td>
+                                        <td>Elige si vas a consultar por RUC, documento o nombre/razón social.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo de documento</td>
+                                        <td>Si buscas por documento, selecciona la opción correcta, por ejemplo DNI.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Número o texto</td>
+                                        <td>Ingresa el número de DNI, el RUC o el nombre/razón social según la búsqueda
+                                            elegida.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Botón Buscar</td>
+                                        <td>Haz clic para obtener el resultado de la consulta.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <h2 class="titleh2"><i class="bi bi-lightbulb iconColor"></i>Consejo de Experto</h2>
+                        <div class="info-card green">
+                            <ul class="ulmargin">
+                                <li class="gap-10">
+                                    <i class="bi bi-lightbulb iconColorgreen"></i>
+                                    Si tienes el número de RUC, úsalo directamente porque la búsqueda suele ser más
+                                    precisa.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-lightbulb iconColorgreen"></i>
+                                    Revisa no solo el estado del RUC, sino también la condición del domicilio fiscal.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-lightbulb iconColorgreen"></i>
+                                    Si consultas por nombre o razón social, escribe los datos de la forma más exacta
+                                    posible.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Errores Comunes</h2>
+                        <div class="info-card red">
+                            <ul class="ulmargin">
+                                <li class="gap-10">
+                                    <i class="bi bi-exclamation-triangle iconColor"></i>
+                                    Escribir mal el número de DNI o RUC.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-exclamation-triangle iconColor"></i>
+                                    Elegir un tipo de búsqueda distinto al dato que realmente tienes.
+                                </li>
+
+                                <li class="gap-10">
+                                    <i class="bi bi-exclamation-triangle iconColor"></i>
+                                    Pensar que basta con que el RUC esté activo sin revisar la condición de domicilio
+                                    habido.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="titleh2"><i class="bi bi-question-circle iconColor"></i>Preguntas Frecuentes</h2>
+                        <section class="faq-section">
+
+                            <div class="faq-item active">
+                                <button class="faq-question">
+                                    ¿Puedo consultar un RUC por DNI?
+                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    Sí, el sistema permite buscar un RUC usando el número de DNI, siempre que esa sea
+                                    una de las opciones habilitadas en el formulario.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Qué significa que el RUC esté activo?
+                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    Significa que el contribuyente se encuentra habilitado para realizar actividades
+                                    económicas.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Qué significa que el domicilio esté habido?
+                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    Significa que el domicilio fiscal ha sido validado correctamente y se encuentra
+                                    reconocido por la Sunat.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Qué hago si el RUC no aparece activo y habido?
+                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    En ese caso debes comunicarte con Sunat para regularizar la situación del
+                                    contribuyente.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿La consulta del RUC tiene costo?
+                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    No, la consulta del estado del RUC se realiza de forma gratuita por internet.
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <div class="alert-aviso">
+                            <span class="icono">⚠️</span>
+                            <p>
+                                <strong>Aviso:</strong> TrámitesPeru.com es un portal informativo independiente.
+                                No estamos afiliados al gobierno peruano. La información puede cambiar sin previo aviso.
+                                Verifica siempre los datos en los canales oficiales de Sunat.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <aside class="catSide" aria-label="Sidebar">
+                    <div data-include="/componentes/site-sidebar.html"></div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <div data-include="/componentes/site-footer.html"></div>
+    <script src="script.js"></script>
+    <script type="module" src="/assets/js/includes.js"></script>
+    <script type="module" src="/assets/js/post-card.js"></script>
+    <script type="module" src="/assets/js/site-sidebar.js"></script>
+    <script type="module" src="/assets/js/action-buttons.js"></script>
+    <script type="module" src="/assets/js/tramitescard.js"></script>
+    <script type="module" src="/assets/js/article-meta.js"></script>
+    <script type="module" src="/assets/js/keywords-block.js"></script>
+    <script type="module" src="/assets/js/site-footer.js"></script>
+    <script type="module" src="/assets/js/article-actions.js"></script>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const item = button.parentElement;
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

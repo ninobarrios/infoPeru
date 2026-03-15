@@ -1,0 +1,165 @@
+.siteSidebar {
+  position: sticky;
+  top: 20px; /* distancia desde arriba */
+  align-self: flex-start; /* importante si usas flexbox */
+}
+
+
+.sideList__item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.sideList__rank {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.sideList__link {
+  font-size: 14px;
+  color: #0f172a;
+  text-decoration: none;
+  line-height: 1.7;
+  transition: color .2s ease;
+  font-weight: 500;
+}
+
+
+/* ===== Más recientes ===== */
+.recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-list__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recent-list__link {
+  font-size: 14px;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.time {
+  font-size: 12px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===== Subscribe Card ===== */
+.subscribe-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subscribe-card p {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.subscribe-input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  transition: border .2s ease, box-shadow .2s ease;
+
+  background-color: rgba(255, 255, 255, 0.1); /* fondo transparente */
+  color: #ffffff; /* texto blanco sólido */
+}
+
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* placeholder blanco suave */
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+
+.subscribe-btn {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.subscribe-msg {
+  font-size: 13px;
+  margin-top: 6px;
+}
+/* ===== Hover sofisticado para items ===== */
+
+.sideList__item,
+.recent-list__item {
+  padding: 10px 12px;
+  border-radius: 14px;
+  transition: background-color 0.25s ease,
+              box-shadow 0.25s ease,
+              transform 0.15s ease;
+}
+
+/* Hover efecto elegante */
+.sideList__item:hover,
+.recent-list__item:hover {
+      background-color: rgba(177, 177, 177, 0.452);
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+

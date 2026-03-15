@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trámites Personales – TrámitesPeru</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/post-card.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+
+
+</head>
+
+<body>
+
+    <header data-include="/componentes/navbar.html"></header>
+
+    <!-- Category Hero -->
+    <section class="catHero_salud">
+        <div class="container catHero__inner">
+
+            <nav class="crumbs" aria-label="breadcrumb">
+                <a href="/home/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                    </svg>
+                </a>
+                <span class="crumbs__sep">›</span>
+                <span>Salud y Seguros</span>
+            </nav>
+
+            <div class="catHero__head">
+                <div class="catHero__badge" aria-hidden="true">
+                    <!-- doc icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-heart-pulse" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5">
+                        </path>
+                        <path
+                            d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="catHero__title">Salud y Seguros</h1>
+                    <p class="catHero__sub">
+                        Información sobre SIS, EsSalud, citas médicas, seguros de salud y todos los servicios médicos
+                        del Estado peruano.
+                    </p>
+                    <div class="catHero__count">2 guías disponibles</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="catPage">
+        <div class="container catLayout">
+
+            <!-- Horizontal Ad -->
+            <div class="adBox adBox--h" role="note" aria-label="Publicidad">
+                <div class="adBox__label">PUBLICIDAD</div>
+                <div class="adBox__hint">Espacio para Google AdSense</div>
+            </div>
+
+            <!-- Main grid -->
+            <div class="catGrid">
+
+                <!-- Left: cards -->
+                <section class="catCards" aria-label="Listado de guías">
+                    <post-card title="Citas SIS 2026: Cómo sacar cita médica en el Seguro Integral de Salud"
+                        image="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800" tags='[
+    {"label":"Salud","color":"red"}
+  ]' description="Guía para sacar citas médicas en el SIS. Aprende a programar tu atención en hospitales y postas del Seguro Integral de Salud."
+                        readtime="5 min de lectura" views="15,421" url="/tramitesCards/citas-sis.html">
+                    </post-card>
+
+
+
+                </section>
+
+                <!-- Right: sidebar -->
+                <aside class="catSide" aria-label="Sidebar">
+
+                    <div data-include="/componentes/site-sidebar.html"></div>
+
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+    <div data-include="/componentes/site-footer.html"></div>
+    <script defer src="/assets/js/site-footer.js"></script>
+    <script src="script.js"></script>
+    <script src="/assets/js/includes.js"></script>
+    <script defer src="/assets/js/post-card.js"></script>
+    <script defer src="/assets/js/site-sidebar.js"></script>
+
+</body>
+
+</html>
