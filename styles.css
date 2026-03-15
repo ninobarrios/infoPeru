@@ -83,44 +83,13 @@ a{
     gap: 18px;
 }
 
-/* Ads */
-.adBox {
-    border: 1px dashed rgba(148, 163, 184, .9);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, .55);
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: #94a3b8;
-}
-
-.adBox--h {
-    height: 82px;
-}
-
-.adBox--v {
-    height: 190px;
-}
-
-.adBox__label {
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: .8px;
-    color: #94a3b8;
-}
-
-.adBox__hint {
-    font-size: 11px;
-    margin-top: 4px;
-    color: #a3b2c7;
-}
-
 /* Grid main */
 .catGrid {
     display: grid;
     grid-template-columns: 1fr 320px;
     gap: 18px;
     align-items: start;
+    margin-top: 50px;
 }
 
 /* Cards list */
@@ -497,6 +466,7 @@ a{
         linear-gradient(180deg, #071024 0%, #061022 55%, #050c1a 100%);
     color: rgba(255, 255, 255, .86);
     padding: 44px 0 18px;
+    margin-top: 50px;
 }
 
 .footer__grid {
