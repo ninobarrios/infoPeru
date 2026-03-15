@@ -83,8 +83,8 @@
       const recentAttr = sidebar.getAttribute("data-recent");
 
       // Cargar datos (atributo JSON o archivo)
-      const most = await loadDataOrFallback(mostAttr, "../data/most-read.json");
-      const recent = await loadDataOrFallback(recentAttr, "../data/recent.json");
+      const most = await loadDataOrFallback(mostAttr, "../../data/most-read.json");
+      const recent = await loadDataOrFallback(recentAttr, "../../data/recent.json");
 
       // Injectar HTML
       if (olMost) olMost.innerHTML = renderMostRead(most);
