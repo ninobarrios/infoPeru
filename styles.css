@@ -256,8 +256,17 @@ a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
+    max-height: 40px; 
+    transition: max-height 3s ease;
 }
 
+post-card:hover .postCard__desc {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    display: block; 
+    max-height: 300px; 
+}
 .postCard__meta {
     display: flex;
     align-items: center;
