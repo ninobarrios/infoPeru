@@ -258,6 +258,7 @@ a {
     margin: 6px 0 0;
     font-size: 13px;
     color: #64748b;
+    font-size: 16px;
 }
 
 /* Categories row */
@@ -269,15 +270,18 @@ a {
 }
 
 .catCard {
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
     border: 1px solid rgba(2, 8, 23, .06);
     border-radius: 14px;
-    padding: 14px;
+    padding: 20px;
     gap: 12px;
     align-items: flex-start;
     box-shadow: 0 10px 24px rgba(2, 8, 23, .06);
     transition: transform .15s ease, box-shadow .15s ease;
     min-height: 92px;
+    width: 95%;
 }
 
 .catCard:hover {
@@ -291,7 +295,6 @@ a {
     border-radius: 10px;
     display: grid;
     place-items: center;
-    margin-bottom: 20px;
 }
 
 .catCard__icon--blue {
@@ -328,7 +331,11 @@ a {
     font-weight: 500;
     font-size: 13px;
     color: #0f172a;
-    line-height: 1.15;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
 }
 
 .catCard__desc {
@@ -336,16 +343,20 @@ a {
     color: #64748b;
     font-size: 14px;
     line-height: 1.25;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .catCard__meta {
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 11px;
     color: #94a3b8;
     font-weight: 300;
+    width: 100%;
 }
 
 .catCard__arrow {
@@ -372,7 +383,7 @@ a {
 .blockSplit__sub {
     margin: 4px 0 0;
     color: #64748b;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .viewAll {
@@ -393,7 +404,7 @@ a {
     margin-top: 14px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap: 1.9rem;
 }
 
 .guideCard {
@@ -403,7 +414,7 @@ a {
     overflow: hidden;
     box-shadow: 0 12px 28px rgba(2, 8, 23, .06);
     transition: transform .15s ease, box-shadow .15s ease;
-    height: 401px;
+    height: auto;
 }
 
 .guideCard:hover {
@@ -413,7 +424,7 @@ a {
 
 .guideCard__media {
     display: block;
-    height: 200px;
+    max-height: 200px;
     overflow: hidden;
 }
 
@@ -464,14 +475,20 @@ a {
 }
 
 .guideCard__title {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 600;
+
 }
 
 .guideCard__title a {
     color: #0f172a;
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .guideCard__title a:hover {
@@ -546,4 +563,3 @@ a {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-

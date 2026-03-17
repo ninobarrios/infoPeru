@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Trámites Personales – TrámitesPeru</title>
     <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../../home/styles.css" />
+    <link rel="stylesheet" href="../..../../index.html
+styles.css" />
 
     <link rel="stylesheet" href="../../assets/css/navbar.css">
 
@@ -20,17 +21,14 @@
 </head>
 
 <body>
-<header data-include="../../componentes/navbar-into.html"></header>
+    <header data-include="../../componentes/navbar-into.html"></header>
     <!-- Category Hero -->
     <section class="catHero_finance">
-        <div class="container catHero__inner">
+        <div class="container">
 
             <nav class="crumbs" aria-label="breadcrumb">
-                <a href="/home/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-house-door" viewBox="0 0 16 16">
-                        <path
-                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
-                    </svg>
+                <a href="../../index.html">
+                    <i class="bi bi-house"></i>
                 </a>
                 <span class="crumbs__sep">›</span>
                 <span>Finanzas y Beneficios</span>
@@ -60,37 +58,26 @@
         </div>
     </section>
 
-    <main class="catPage">
-        <div class="container catLayout">
-            <!-- Main grid -->
+   <main>
+        <div class="container-lg px-4 px-lg-5">
             <div class="catGrid">
-
-                <!-- Left: cards -->
-                <section class="catCards" aria-label="Listado de guías">
-                    <post-card title="Consulta RUC SUNAT: Cómo verificar y obtener tu RUC 2026"
-                        image="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800" tags='[
-    {"label":"Finanzas","color":"green"},
-    {"label":"Destacado","color":"yellow"}
-  ]' description="Aprende a consultar el RUC en SUNAT, verificar datos tributarios y cómo obtener tu número RUC paso a paso en Perú 2026."
-                        readtime="7 min de lectura" views="15,421" url="/tramitesCards/consulta-ruc.html">
+                <section class="catCards" aria-label="Listado de guías de trámites laborales">
+                    <post-card title="Certificado Único Laboral (CUL) – Cómo obtenerlo gratis en línea"
+                        image="../../fotos/cul.jpg" tags='[{"label":"Empleo","color":"blue"}]'
+                        description="Obtén tu Certificado Único Laboral (Certiadulto o Certijoven) de forma gratuita. Reúne antecedentes penales, judiciales y experiencia laboral en un solo documento oficial."
+                        readtime="4-5 min de lectura" views="12,350" url="certificado-unico-laboral.html">
                     </post-card>
 
-                    <post-card title="Retiro AFP 2026: Cómo realizar el retiro tu dinero paso a paso"
-                        image="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800" tags='[
-    {"label":"Finanzas","color":"green"},
-    {"label":"Destacado","color":"yellow"}
-  ]' description="Todo sobre el retiro de fondos AFP en Perú 2026. Requisitos, montos máximos, plazos y cómo solicitar tu retiro de forma segura."
-                        readtime="7 min de lectura" views="15,421" url="/tramitesCards/consulta-afp.html">
+                    <post-card title="Certificado o Constancia Laboral – Cómo solicitarla a tu empleador"
+                        image="../../fotos/constancia laboral.png" tags='[{"label":"Derechos","color":"green"}]'
+                        description="Guía paso a paso sobre el procedimiento legal para solicitar una constancia de trabajo en Perú."
+                        readtime="4 min de lectura" views="8,920" url="certificado-constancia-laboral.html">
                     </post-card>
                 </section>
-
-                <!-- Right: sidebar -->
                 <aside class="catSide" aria-label="Sidebar">
                     <div data-include="../../componentes/site-sidebar.html"></div>
                 </aside>
             </div>
-
-        </div>
     </main>
 
     <div data-include="../../componentes/site-footer.html"></div>

@@ -1,6 +1,7 @@
-a{   
-     text-decoration: none !important; 
+a {
+    text-decoration: none !important;
 }
+
 /* ===== Category page ===== */
 .catHero {
     background: #2b6bff;
@@ -8,9 +9,7 @@ a{
     padding: 44px 0 34px;
 }
 
-.catHero__inner {
-    position: relative;
-}
+
 
 .crumbs {
     display: flex;
@@ -57,6 +56,92 @@ a{
     letter-spacing: -.4px;
 }
 
+.listStyle {
+    margin: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.listStyle li {
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.listStyle li::before {
+    content: "\f26b";
+    font-family: "bootstrap-icons" !important;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #28a745;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Clase para listas de advertencia/errores */
+.listStyleError {
+    margin: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.listStyleError li {
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.listStyleError li::before {
+    /* CÓDIGO UNICODE PARA BI-EXCLAMATION-TRIANGLE */
+    content: "\f33b";
+    font-family: "bootstrap-icons" !important;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #dc3545;
+    /* Color rojo para errores/alertas */
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.listStyleLight {
+    margin: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.listStyleLight li {
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.listStyleLight li::before {
+    /* CÓDIGO UNICODE INFALIBLE PARA BI-LIGHTBULB */
+    content: "\f46b";
+
+    font-family: "bootstrap-icons" !important;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #28a745;
+    /* Tu verde iconColorgreen */
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .catHero__sub {
     margin: 8px 0 10px;
     max-width: 700px;
@@ -74,7 +159,7 @@ a{
 /* Layout wrapper */
 .main {
     background: #f7f9fc;
-    padding: 22px 0 56px;
+    padding: 0px 0 56px;
 }
 
 .catLayout {
@@ -86,7 +171,8 @@ a{
 /* Grid main */
 .catGrid {
     display: grid;
-    grid-template-columns: 1fr 320px;
+    /* 8fr + 2fr = 10 partes totales. 8 de 10 es el 80% */
+    grid-template-columns: 7fr 3fr;
     gap: 18px;
     align-items: start;
     margin-top: 50px;
@@ -146,6 +232,10 @@ a{
     font-size: 13px;
     line-height: 1.25;
     font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .postCard__title a {
@@ -162,6 +252,10 @@ a{
     color: #64748b;
     font-size: 14px;
     line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .postCard__meta {
@@ -203,10 +297,9 @@ a{
 
 .sideList li {
     display: flex;
-    align-items: flex-start;
     gap: 12px;
-    margin: 10px;
-    padding: 7px;
+    margin: 0 10px;
+    padding: 5px 7px;
     align-items: center;
 }
 
@@ -233,7 +326,6 @@ a{
 
 .chip {
     font-size: 10px;
-    font-weight: 900;
     padding: 5px 8px;
     border-radius: 999px;
     border: 1px solid rgba(2, 8, 23, .06);
@@ -275,11 +367,9 @@ a{
     border-radius: 9999px;
 }
 
-.text-slate-500 {
-    --tw-text-opacity: 1;
-    color: rgb(100 116 139 / var(--tw-text-opacity, 1));
-    padding: 4px 8px;
-    font-size: 12px;
+.stepPicture {
+    border: 1px solid #0000000f;
+    border-radius: 15px;
 }
 
 .justify-center {
@@ -435,6 +525,28 @@ a{
     background: linear-gradient(90deg,
             rgb(255, 65, 108) 0%,
             rgb(236, 36, 74) 100%);
+}
+
+.catHero_migraciones {
+    color: #fff;
+    padding: 44px 0 34px;
+    background: linear-gradient(90deg, rgba(0, 158, 142, 1) 0%, rgba(0, 163, 152, 1) 100%);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.catHero_negocios {
+    color: #fff;
+    padding: 44px 0 34px;
+    background: linear-gradient(90deg, rgba(0, 6, 115, 1) 0%, rgba(0, 18, 110, 1) 100%);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.catHero_trabajo {
+    color: #fff;
+    padding: 44px 0 34px;
+    background: linear-gradient(90deg, rgba(0, 189, 47, 1) 0%, rgba(0, 186, 16, 1) 100%);
+
+
 }
 
 .catHero_education {
@@ -707,7 +819,6 @@ a{
     gap: 10px;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.85);
-    margin-bottom: 16px;
     padding-left: 0px;
 }
 
@@ -829,7 +940,7 @@ a{
     padding: 8px 0 0 0;
     border-radius: 18px;
     margin: 10px 0 0 0;
-    
+
 }
 
 .hero-img {
@@ -840,10 +951,11 @@ a{
     object-fit: cover;
     max-height: 520px;
 }
-.action-label{
+
+.action-label {
     font-weight: 600;
     color: #000000;
-        font-family: system-ui, -apple-system, sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
 
 }
 
