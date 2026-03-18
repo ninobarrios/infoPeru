@@ -210,11 +210,6 @@ a {
 
 /* Responsive */
 @media (max-width: 980px) {
-    .nav {
-        display: none;
-    }
-
-    /* igual al look: menú central suele colapsar */
     .brand {
         min-width: unset;
     }
@@ -248,7 +243,7 @@ a {
 
 .blockHead__title {
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: -.2px;
     color: #0f172a;
@@ -264,7 +259,7 @@ a {
 /* Categories row */
 .cats {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
     margin-top: 14px;
 }
@@ -275,13 +270,14 @@ a {
     background: #ffffff;
     border: 1px solid rgba(2, 8, 23, .06);
     border-radius: 14px;
-    padding: 20px;
+    padding: 30px;
     gap: 12px;
     align-items: flex-start;
     box-shadow: 0 10px 24px rgba(2, 8, 23, .06);
     transition: transform .15s ease, box-shadow .15s ease;
     min-height: 92px;
     width: 95%;
+    justify-content: space-between;
 }
 
 .catCard:hover {

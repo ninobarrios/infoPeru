@@ -1,66 +1,104 @@
-<div class="topbar">
-    <div class="container topbar__inner">
-        <div class="topbar__left">
-            <span class="dot"></span>
-            <span>Información actualizada para Perú 2026</span>
+<style>
+    .topbar {
+        background-color: #071024;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bg-primary-custom {
+        background-color: #1d4ed8 !important;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(29, 78, 216, 0.05);
+        color: #1d4ed8 !important;
+        border-radius: 8px;
+    }
+    .mr-5{
+        margin-right: 5px !important;
+    }
+</style>
+
+
+<div class="topbar py-2 small">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span class="badge badge-pill badge-primary mr-2" style="width:10px; height:10px; padding:0;">&nbsp;</span>
+            Información actualizada para Perú 2026
         </div>
-        <div class="topbar__right">
-            <a href="#contacto">Contacto</a>
-            <a href="#sobre">Sobre nosotros</a>
+        <div class="d-none d-md-block">
+            <a href="#contacto" class="text-white-50 mr-3">Contacto</a>
+            <a href="#sobre" class="text-white-50">Sobre nosotros</a>
         </div>
     </div>
 </div>
-<header class="header">
-    <div class="container header__inner">
-        <a class="brand" href="../../index.html">
-            <div class="brand__icon" aria-hidden="true">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container mx-auto" style="width: 80% !important; max-width: 80%;">
+        <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+            <div class="bg-primary-custom text-white rounded d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px;">
                 <i class="bi bi-clipboard-check"></i>
             </div>
-            <div class="brand__text">
-                <div class="brand__name">TrámitesPeru</div>
-                <div class="brand__tag">Guías 2026</div>
+            <div style="line-height: 1.2; margin-left:10px">
+                <strong class="d-block">TrámitesPeru</strong>
+                <small class="text-muted">Guías 2026</small>
             </div>
         </a>
-        <nav class="nav">
-            <a class="nav__link" href="../../tramites/personales/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-clipboard-check"></i>
-                </span>
-                Personales
-            </a>
-            <a class="nav__link" href="../../tramites/finanzas/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-cash-coin"></i>
-                </span>
-                Finanzas
-            </a>
-            <a class="nav__link" href="../../tramites/trabajo/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-briefcase"></i>
-                </span>
-                Trabajo
-            </a>
-            <a class="nav__link" href="../../tramites/salud/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-heart-pulse"></i>
-                </span>
-                Salud
-            </a>
-            <a class="nav__link" href="../../tramites/educacion/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-pencil-square"></i>
-                </span>
-                Educación
-            </a>
-            <a class="nav__link" href="../../tramites/tecnologia/index.html">
-                <span class="nav__icon" aria-hidden="true">
-                    <i class="bi bi-pc-display"></i>
-                </span>
-                Tecnología
-            </a>
-        </nav>
-        <button class="iconBtn" id="openSearch" aria-label="Buscar">
-            <i class="bi bi-search"></i>
-        </button>
+
+        <div class="d-flex align-items-center order-lg-last">
+            <button class="btn btn-link text-secondary p-2 mr-2">
+                <i class="bi bi-search"></i>
+            </button>
+
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/personales/index.html">
+                        <i class="bi bi-clipboard-check mr-5"></i>Personales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/finanzas/index.html">
+                        <i class="bi bi-cash-coin mr-5"></i>Finanzas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/trabajo/index.html">
+                        <i class="bi bi-briefcase mr-5"></i>Trabajo
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/negocios/index.html">
+                        <i class="bi bi-currency-dollar mr-5"></i>Negocios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/migraciones/index.html">
+                        <i class="bi bi-airplane-engines mr-5"></i>Migraciones
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/salud/index.html">
+                        <i class="bi bi-heart-pulse mr-5"></i>Salud
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/educacion/index.html">
+                        <i class="bi bi-pencil-square mr-5"></i>Educación
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="../../tramites/tecnologia/index.html">
+                        <i class="bi bi-pc-display mr-5"></i>Tecnología
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</header>
+</nav>

@@ -28,9 +28,7 @@ a {
     text-decoration: underline;
 }
 
-.crumbs__sep {
-    opacity: .7;
-}
+
 
 .catHero__head {
     display: flex;
@@ -587,7 +585,6 @@ post-card:hover .postCard__desc {
         linear-gradient(180deg, #071024 0%, #061022 55%, #050c1a 100%);
     color: rgba(255, 255, 255, .86);
     padding: 44px 0 18px;
-    margin-top: 50px;
 }
 
 .footer__grid {

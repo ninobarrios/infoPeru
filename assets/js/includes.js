@@ -23,5 +23,4 @@ async function loadIncludes() {
     }
   }));
 }
-
 document.addEventListener("DOMContentLoaded", loadIncludes);
