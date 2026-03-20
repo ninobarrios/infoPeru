@@ -11,6 +11,138 @@
     <link rel="stylesheet" href="../../assets/css/tramitescard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .tramites-vertical {
+            max-width: 700px;
+            margin: 0px auto 40px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            padding: 20px;
+        }
+
+        .header-simple {
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .header-simple h2 {
+            color: #333;
+            margin: 0;
+        }
+
+        .rows-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            /* Espacio entre filas */
+        }
+
+        .tramite-row {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .tramite-row:hover {
+            border-color: #0056b3;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .row-icon {
+            font-size: 1.8rem;
+            margin-right: 20px;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .row-content h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            color: #0056b3;
+        }
+
+        .row-content p,
+        .inner-list {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Estilos de la sublista */
+        .inner-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .inner-list li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .inner-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Nota de Reniec */
+        .reniec-note {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff9e6;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #856404;
+        }
+
+        /* Contenedor de las pestañas */
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            /* Espacio entre botones */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        /* Estilo base del botón */
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f8f9fa;
+            color: #6c757d;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+            /* Bordes redondeados arriba */
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        /* Efecto al pasar el mouse */
+        .tab-button:hover {
+            background-color: #e2e6ea;
+            color: #0056b3;
+        }
+
+        /* ESTADO ACTIVO: El que resalta */
+        .tab-button.active {
+            background-color: #2563eb;
+            /* Azul institucional */
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -31,16 +163,17 @@
                                 <a href="/tramites-personales/"><i class="bi bi-chevron-right"></i> Personales </a> <i
                                     class="bi bi-chevron-right"></i>
                             </li>
-                            <li class="font-medium" aria-current="page">Renovar DNI para Mayores de 17 Años – Requisitos
-                                y pasos</li>
+                            <li class="font-medium" aria-current="page">Renovar DNI a los 17 años en Perú (2026):
+                                Requisitos y Pasos</li>
                         </ol>
                     </nav>
                     <header>
-                        <h1 class="textTitle" itemprop="headline">Renovar DNI para Mayores de 17 Años – Requisitos y
-                            pasos</h1>
+                        <h1 class="textTitle" itemprop="headline">Renovar DNI a los 17 años en Perú (2026): Requisitos y
+                            Pasos</h1>
                         <p class="textDescription" itemprop="description">
-                            La renovación del DNI permite actualizar el documento nacional de identidad cuando ha
-                            vencido o cuando el ciudadano cumple la mayoría de edad.
+                            Si ya cumpliste los 17 años, es momento de realizar el cambio de tu <strong>DNI amarillo
+                                (menores)</strong> por el <strong>DNI azul o electrónico (adultos)</strong>. Este
+                            proceso es fundamental para trámites universitarios, militares y laborales.
                         </p>
                         <article-meta date="16 de febrero, 2026" readtime="12 min de lectura"
                             author="Equipo Editorial"></article-meta>
@@ -54,342 +187,553 @@
                         </figure>
                     </section>
                     <section class="contenttramit" aria-label="Contenido del trámite" itemprop="articleBody">
-                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>¿Qué es este trámite?</h2>
+                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>¿Qué es la renovación de DNI Azul?
+                        </h2>
                         <p class="leading-relaxed">
-                            Este trámite permite renovar el DNI de personas mayores de 17 años cuando está por vencer,
-                            ya venció o cuando se necesita actualizar información personal. La renovación puede hacerse
-                            por internet o de forma presencial, según el tipo de documento y el caso del solicitante.
+                            Este trámite de <strong>RENIEC</strong> permite a los ciudadanos peruanos actualizar su
+                            documento de identidad al cumplir los <strong>17 años</strong> o cuando el <strong>DNI
+                                Azul</strong> está próximo a vencer (dentro de los 60 días previos). Es un paso
+                            obligatorio para registrar tu firma de adulto y asegurar que tus datos biométricos estén
+                            vigentes en el padrón electoral para futuros procesos de votación.
                         </p>
 
-                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Quién debe realizarlo?</h2>
+                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Quién debe realizar este trámite?
+                        </h2>
                         <p class="leading-relaxed">
-                            Está dirigido a ciudadanos peruanos desde los 17 años que necesiten renovar su DNI de
-                            adulto.
-                            También aplica para quienes deseen actualizar datos como domicilio, estado civil, grado de
-                            instrucción, firma o información de sus padres.
+                            Está dirigido exclusivamente a jóvenes que pasan del <strong>DNI amarillo al azul</strong> a
+                            los 17 años y a adultos que posean un DNI vencido o por caducar.
+                            <br><br>
+                            También es el momento ideal para quienes necesitan realizar una <strong>rectificación de
+                                datos</strong>, como el cambio de estado civil, actualización de domicilio, grado de
+                            instrucción o la voluntad de ser donante de órganos.
                         </p>
+                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Qué obtendrás al renovar?
+                        </h2>
+                        <ul class="listStyle">
+                            <li> Recibirás el DNI electrónico (DNIe 3.0).</li>
+                            <li>Tendrá una vigencia de 10 años.</li>
+                            <li><strong>Incluye:</strong>Firma digital y Clave PIN</li>
+                        </ul>
 
-                        <section aria-labelledby="requisitos">
-                            <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Requisitos</h2>
-                            <ul style="margin: 15px;">
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Comprobante de pago del trámite según el tipo de DNI que tengas.
+                        <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Consideraciones
+                            Importantes</h2>
+                        <div class="info-card green">
+                            <ul class="listStyleLight">
+                                <li>
+                                    Personas con <strong>discapacidad permanente:</strong> trámite gratuito y
+                                    presencial.
                                 </li>
 
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Carné de Conadis, si tienes discapacidad permanente y realizarás el trámite
-                                    presencial gratuito.
+                                <li>
+                                    Personas <strong>mayores de 60 años:</strong> DNI sin fecha de vencimiento.
                                 </li>
 
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Recibo original de servicio público o tributo municipal con una antigüedad máxima de
-                                    6 meses, si vas a cambiar tu domicilio.
+                                <li>
+                                    Si estás en el extranjero: haz el trámite en el <strong>consulado peruano.</strong>
                                 </li>
 
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Declaración jurada o documentos sustentatorios si deseas actualizar tu estado civil.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Declaración jurada o constancia de estudios si vas a modificar tu grado de
-                                    instrucción.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Si deseas cambiar tu firma, solo debes indicarlo al registrador durante la atención.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Para actualizar nombres de padres u otros datos, se tomará como referencia tu
-                                    partida de nacimiento.
+                                <li>
+                                    La entrega del DNI es <strong>personal</strong> (debes ingresar tu PIN).
                                 </li>
                             </ul>
+                        </div>
+
+
+                        <section aria-labelledby="requisitos">
+                            <h2 class="titleh2" id="requisitos">
+                                <i class="bi bi-check-circle iconColor"></i>Requisitos (según lo que quieras actualizar)
+                            </h2>
+                            <div class="tramites-vertical">
+
+                                <div class="rows-container">
+                                    <div class="tramite-row">
+                                        <div class="row-icon">🏠</div>
+                                        <div class="row-content">
+                                            <h3>Actualización de Domicilio</h3>
+                                            <p>Recibo de servicio o tributo (máx. 6 meses).</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="tramite-row highlight-border">
+                                        <div class="row-icon">💍</div>
+                                        <div class="row-content">
+                                            <h3>Estado Civil</h3>
+                                            <ul class="inner-list">
+                                                <li><strong>Casado(a):</strong> Declaración jurada o Acta de matrimonio.
+                                                </li>
+                                                <li><strong>Divorciado(a):</strong> Acta de matrimonio con disolución.
+                                                </li>
+                                                <li><strong>Viudo(a):</strong> Declaración jurada o Acta de defunción.
+                                                </li>
+                                            </ul>
+                                            <div class="reniec-note">👉 No necesitas actas si ya están en Reniec.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tramite-row">
+                                        <div class="row-icon">🎓</div>
+                                        <div class="row-content">
+                                            <h3>Grado de Instrucción</h3>
+                                            <p>Declaración jurada (básico) o Constancia de estudios (superior).</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="tramite-row">
+                                        <div class="row-icon">✍️</div>
+                                        <div class="row-content">
+                                            <h3>Cambio de Firma</h3>
+                                            <p>Solo indícalo durante el trámite presencial.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="tramite-row">
+                                        <div class="row-icon">📄</div>
+                                        <div class="row-content">
+                                            <h3>Otros Datos</h3>
+                                            <p>Según la información de tu acta de nacimiento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
 
-                        <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>Documentos Necesarios</h2>
-                        <section class="tabla-docs-wrap">
-                            <table class="tabla-docs">
-                                <thead>
-                                    <tr>
-                                        <th>Documento</th>
-                                        <th>Descripción</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Comprobante de pago</td>
-                                        <td>Constancia del pago realizado por la renovación del DNI</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Carné de Conadis</td>
-                                        <td>Se solicita en casos de discapacidad permanente</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Recibo de servicio o tributo</td>
-                                        <td>Sirve para sustentar el cambio de domicilio</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Actas o declaraciones juradas</td>
-                                        <td>Se usan para actualizar estado civil u otros datos personales</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Constancia de estudios</td>
-                                        <td>Necesaria para modificar el grado de instrucción, cuando corresponda</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
-
-                        <h2 class="titleh2"><i class="bi bi-currency-dollar iconColor"></i>Costos Oficiales</h2>
+                        <h2 class="titleh2"><i class="bi bi-currency-dollar iconColor"></i>Costos Oficiales 2026</h2>
                         <section class="tabla-docs-wrap">
                             <table class="tabla-docs">
                                 <thead>
                                     <tr>
                                         <th>Concepto</th>
                                         <th>Monto</th>
-                                        <th>Notas</th>
+                                        <th>Código de Pago</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Migración de DNI azul a DNIe</td>
+                                        <td><strong>DNI Electrónico (DNIe)</strong> - Cambio de amarillo a mayor de edad
+                                        </td>
                                         <td>S/ 30.00</td>
-                                        <td>Código 02121, válido hasta el 12 de abril de 2026</td>
+                                        <td>Código 02121 (Tasa promocional vigente)</td>
                                     </tr>
-
                                     <tr>
-                                        <td>Renovación de DNIe de mayor</td>
+                                        <td><strong>DNI Azul</strong> - Cambio de amarillo a mayor de edad</td>
+                                        <td>S/ 30.00</td>
+                                        <td>Código 02119</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Renovación de DNIe</strong> (Si ya eres mayor de edad)</td>
                                         <td>S/ 41.00</td>
                                         <td>Código 00525</td>
                                     </tr>
-
                                     <tr>
-                                        <td>Renovación para menor con DNIe que cumple 17 años</td>
-                                        <td>S/ 41.00</td>
-                                        <td>Código 00521</td>
+                                        <td><strong>Renovación de DNI Azul</strong> (Si ya eres mayor de edad)</td>
+                                        <td>S/ 30.00</td>
+                                        <td>Código 02121</td>
                                     </tr>
-
                                     <tr>
-                                        <td>Cambio de lugar de entrega</td>
+                                        <td><strong>Personas con Discapacidad</strong></td>
+                                        <td>Gratuito</td>
+                                        <td>Presentando carné de CONADIS o Certificado médico</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cambio de lugar de entrega</strong></td>
                                         <td>S/ 5.00</td>
-                                        <td>Opcional al iniciar el trámite</td>
+                                        <td>Código 02143 (Se paga adicional a la tasa del DNI)</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </section>
 
                         <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Paso a Paso</h2>
-                        <section class="container my-5">
-
-                            <div class="row">
-                                <div class="col-md-1 centerStep">
-                                    <div class="d-flex flex-column align-items-center alt80">
-                                        <div class="h-10">
-                                            <div class="numero-circulo">1</div>
+                        <div class="tab-container">
+                            <button onclick="mostrarSeccion('online')" id="btn-online" class="tab-button active">Trámite
+                                Online</button>
+                            <button onclick="mostrarSeccion('presencial')" id="btn-presencial"
+                                class="tab-button">Trámite Presencial</button>
+                        </div>
+                        <div id="contenido-online" class="seccion-tramite">
+                            <section class="container my-5">
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">1</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
                                         </div>
-                                        <div class="h-90">
-                                            <div class="numero-line"></div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Realiza el pago</h3>
+                                        <img src="../../fotos/generar pago.png" alt="">
+                                        <div class="card bg-light border-2 p-3">
+                                            <div class="card-bod" style="margin-top: 0px;">
+                                                <h5 class="card-title text-primary">
+                                                    <i class="bi bi-cash-coin"></i> ¿Cómo funciona el pago al tributo?
+                                                </h5>
+                                                <p class="card-text small">
+                                                    El <strong>Código de Tributo</strong> es el número identificador que
+                                                    las entidades financieras (como el Banco de la Nación o BCP)
+                                                    utilizan para procesar el pago específico de tu trámite ante RENIEC.
+                                                    Al momento de pagar, ya sea presencialmente o por web, deberás
+                                                    indicar este código junto con tu número de DNI para que el pago
+                                                    quede registrado correctamente y pueda ser vinculado a tu trámite de
+                                                    renovación.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Elige la modalidad del trámite</h3>
-                                    <p>
-                                        Puedes renovar tu DNI por internet o de forma presencial, dependiendo del
-                                        documento que tengas
-                                        y del tipo de actualización que necesites realizar.
-                                    </p>
-                                    <p>
-                                        Si aún tienes DNI azul, al renovarlo pasarás al DNI electrónico. Si solo tuviste
-                                        DNI de menor,
-                                        deberás hacer el trámite de manera presencial.
-                                    </p>
-                                </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">2</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Validación facial</h3>
+                                        <ul class="listStyle">
+                                            <li>Descarga la app DNI Bio Facial.</li>
+                                            <li>Tómate la foto siguiendo las indicaciones.</li>
+                                        </ul>
 
-                            <div class="row">
-                                <div class="col-md-1 centerStep">
-                                    <div class="d-flex flex-column align-items-center alt80">
-                                        <div class="h-10">
-                                            <div class="numero-circulo">2</div>
-                                        </div>
-                                        <div class="h-90">
-                                            <div class="numero-line"></div>
-                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Realiza el pago</h3>
-                                    <p>
-                                        Haz el pago según tu caso: <strong>S/ 30.00</strong> si migras de DNI azul a
-                                        DNIe,
-                                        o <strong>S/ 41.00</strong> si renuevas DNI electrónico de mayor.
-                                    </p>
-                                    <p>
-                                        Puedes pagar en línea, en Yape, agente BCP, Banco de la Nación, agentes
-                                        autorizados
-                                        o a través de Pagalo.pe. Guarda tu comprobante o una captura del pago.
-                                    </p>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">3</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Completa el trámite online</h3>
+                                        <ul class="listStyle">
+                                            <li>Ingresa tus datos</li>
+                                            <li>Elige dónde recoger tu DNI</li>
+                                            <li>Recibirás confirmación por correo</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">4</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Seguimiento y recojo</h3>
+                                        <ul class="listStyle">
+                                            <li>Verifica que el trámite esté al 100%</li>
+                                            <li>Acércate al lugar indicado</li>
+                                            <li>Ingresa tu PIN al recogerlo</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">5</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Cambio de lugar de entrega (opcional)</h3>
+                                        <ul class="listStyle">
+                                            <li>Puedes solicitarlo al inicio del trámite</li>
+                                            <li>Costo adicional: S/ 5.00</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">6</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Resumen Rápido</h3>
+                                        <ul class="listStyle">
+                                            <li>Verifica si debes renovar</li>
+                                            <li>Reúne requisitos (si harás cambios)</li>
+                                            <li>Elige modalidad: web o presencial</li>
+                                            <li>Realiza el pago</li>
+                                            <li>Completa el trámite</li>
+                                            <li>Espera aprobación</li>
+                                            <li>Recoge tu DNI personalmente</li>
+                                        </ul>
+                                        <img src="../../fotos/descargar biofacial.png" alt="">
+                                    </div>
+                                </div>
+                            </section>
 
-                            <div class="row">
-                                <div class="col-md-1 centerStep">
-                                    <div class="d-flex flex-column align-items-center alt80">
-                                        <div class="h-10">
-                                            <div class="numero-circulo">3</div>
+                        </div>
+
+                        <div id="contenido-presencial" class="seccion-tramite" style="display: none;">
+                            <section class="container my-5">
+
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">1</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
                                         </div>
-                                        <div class="h-90">
-                                            <div class="numero-line"></div>
-                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Acércate a un centro autorizado</h3>
+                                        <p>
+                                            Oficina de Reniec o Centro MAC
+                                        </p>
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Actualiza tus datos y fotografía</h3>
-                                    <p>
-                                        Si haces el trámite digital, deberás identificarte mediante la aplicación DNI
-                                        Bio Facial
-                                        y registrar la fotografía que se usará en tu documento.
-                                    </p>
-                                    <p>
-                                        Si realizas la renovación presencial, en la oficina tomarán tus huellas y
-                                        actualizarán
-                                        tu foto sin costo adicional.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-1 centerStep">
-                                    <div class="d-flex flex-column align-items-center alt80">
-                                        <div class="h-10">
-                                            <div class="numero-circulo">4</div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">2</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
                                         </div>
-                                        <div class="h-90">
-                                            <div class="numero-line"></div>
-                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Realiza el pago</h3>
+                                        <section class="tabla-docs-wrap">
+                                            <table class="tabla-docs">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tipo de Trámite</th>
+                                                        <th>Costo</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>DNI de menor → DNIe</td>
+                                                        <td class="monto">S/ 30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DNIe menor a mayor</td>
+                                                        <td class="monto">S/ 41</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Renovación DNIe adulto</td>
+                                                        <td class="monto">S/ 41</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Selecciona la oficina de entrega</h3>
-                                    <p>
-                                        Durante el proceso podrás elegir el centro de atención donde recogerás tu nuevo
-                                        DNI.
-                                        Al finalizar, recibirás una constancia del trámite en tu correo electrónico.
-                                    </p>
-                                    <p>
-                                        También podrás consultar el avance del trámite hasta verificar que llegue al
-                                        100%.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-1 centerStep">
-                                    <div class="d-flex flex-column align-items-center alt80">
-                                        <div class="h-10">
-                                            <div class="numero-circulo">5</div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">3</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
                                         </div>
-                                        <div class="h-90">
-                                            <div class="numero-line"></div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Entrega tus datos</h3>
+                                        <p style="margin-bottom: 0px;"><strong>Te toman:</strong></p>
+                                        <ul class="listStyle">
+                                            <li>Foto</li>
+                                            <li>Huellas</li>
+                                            <li>Firma</li>
+                                        </ul>
+                                        <div class="card border-warning mb-3">
+                                            <div class="card-body text-dark bg-light bg-gradient shadow-sm rounded">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3">
+                                                        <span class="fs-2">⚠️</span>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="card-title fw-bold text-warning-emphasis mb-1">Aviso
+                                                            Importante</h6>
+                                                        <p class="card-text mb-0">
+                                                            Te darán un ticket con fecha aproximada (<strong>≈ 10 días
+                                                                hábiles</strong>).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Recoge tu nuevo DNI</h3>
-                                    <p>
-                                        Cuando el sistema indique que el trámite está completo, acércate personalmente
-                                        a la agencia seleccionada para recoger tu documento.
-                                    </p>
-                                    <p>
-                                        La entrega es personal porque deberás ingresar la clave PIN asociada a tu
-                                        certificado
-                                        y firma digital. El plazo estimado de entrega es de aproximadamente 10 días
-                                        hábiles.
-                                    </p>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">4</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Recoge tu DNI</h3>
+                                        <ul class="listStyle">
+                                            <li>Verifica que el trámite esté al 100%</li>
+                                            <li>Acércate al lugar indicado</li>
+                                            <li>Ingresa tu PIN al recogerlo</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">5</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Cambio de lugar de entrega (opcional)</h3>
+                                        <ul class="listStyle">
+                                            <li>Puedes solicitarlo al inicio del trámite</li>
+                                            <li>Costo adicional: S/ 5.00</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">6</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Resumen Rápido</h3>
+                                        <ul class="listStyle">
+                                            <li>Verifica si debes renovar</li>
+                                            <li>Reúne requisitos (si harás cambios)</li>
+                                            <li>Elige modalidad: web o presencial</li>
+                                            <li>Realiza el pago</li>
+                                            <li>Completa el trámite</li>
+                                            <li>Espera aprobación</li>
+                                            <li>Recoge tu DNI personalmente</li>
+                                        </ul>
+                                        <img src="../../fotos/descargar biofacial.png" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
 
-                        </section>
 
                         <h2 class="titleh2"><i class="bi bi-display iconColor"></i>Importante</h2>
                         <div class="info-card blue">
                             <p>
-                                <strong>Importante:</strong> Puedes renovar tu DNI hasta 60 días antes de su vencimiento
-                                para evitar problemas en otros trámites.
+                                <strong>Importante:</strong> Antes de iniciar tu trámite, ten en cuenta lo siguiente:
                             </p>
 
                             <ul style="margin-left: 25px;">
-                                <li>Las personas con discapacidad permanente pueden hacer el trámite gratis y de forma
-                                    presencial.</li>
-                                <li>A los mayores de 60 años se les entrega un DNI con la indicación “No caduca”.</li>
-                                <li>Si vives fuera del país, la renovación se realiza en el consulado peruano.</li>
-                                <li>Debes asegurarte de que tu foto cumpla con los requisitos técnicos para que el
-                                    trámite no sea rechazado.</li>
+                                <li>Puedes renovar tu DNI hasta 60 días antes de su vencimiento para evitar
+                                    inconvenientes en otros trámites.</li>
+                                <li>Si tienes discapacidad permanente, el trámite es gratuito y debe hacerse
+                                    presencialmente.</li>
+                                <li>Si tienes 60 años o más, recibirás un DNI con la indicación “No caduca”.</li>
+                                <li>Si te encuentras en el extranjero, debes realizar el trámite en el consulado
+                                    peruano.</li>
+                                <li>Es fundamental que tu foto cumpla con los requisitos técnicos, de lo contrario tu
+                                    trámite puede ser rechazado.</li>
+
                             </ul>
                         </div>
 
                         <h2 class="titleh2"><i class="bi bi-lightbulb iconColor"></i>Consejo de Experto</h2>
+                        <p>Para que tu renovación sea más rápida y sin problemas:</p>
                         <div class="info-card green">
                             <ul class="ulmargin">
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-lightbulb iconColorgreen"></i>
-                                    Renueva tu DNI antes de que venza para evitar inconvenientes en bancos, viajes o
-                                    trámites oficiales.
+                                    Realiza la renovación antes de que tu DNI venza, así evitarás dificultades en
+                                    bancos, viajes o trámites oficiales.
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-lightbulb iconColorgreen"></i>
-                                    Revisa bien el código de pago que te corresponde antes de cancelar la tasa.
+                                    Verifica bien el código de pago que te corresponde según tu tipo de DNI.
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-lightbulb iconColorgreen"></i>
-                                    Guarda siempre tu comprobante y el correo de confirmación del trámite.
+                                    Guarda siempre:
+                                    Tu comprobante de pago y
+                                    El correo de confirmación del trámite
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-lightbulb iconColorgreen"></i>
-                                    Si vas a cambiar domicilio o estado civil, reúne primero todos los documentos de
-                                    sustento.
+                                    Si vas a actualizar datos (domicilio, estado civil, estudios), reúne todos los
+                                    documentos necesarios antes de iniciar.
                                 </li>
                             </ul>
                         </div>
 
                         <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Errores Comunes</h2>
+                        <p>Evita estos problemas frecuentes durante el trámite:</p>
                         <div class="info-card red">
                             <ul class="ulmargin">
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-exclamation-triangle iconColor"></i>
-                                    Pagar con un código de tributo que no corresponde a tu caso.
+                                    Pagar con un código de tributo incorrecto.
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-exclamation-triangle iconColor"></i>
-                                    Subir una foto que no cumple con los requisitos técnicos exigidos.
+                                    Subir una foto que no cumple los requisitos establecidos.
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-exclamation-triangle iconColor"></i>
-                                    Olvidar llevar los documentos que sustentan cambios de domicilio, estado civil o
-                                    grado de instrucción.
+                                    No llevar los documentos necesarios si deseas actualizar información personal.
                                 </li>
 
-                                <li class="gap-10">
+                                <li>
                                     <i class="bi bi-exclamation-triangle iconColor"></i>
-                                    No revisar el estado del trámite antes de acudir a recoger el DNI.
+                                    Ir a recoger tu DNI sin verificar antes que el trámite esté completo (100%).
                                 </li>
                             </ul>
                         </div>
@@ -403,8 +747,11 @@
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Puedes renovarlo hasta 60 días antes de la fecha de vencimiento para evitar
-                                    contratiempos.
+                                    Puedes renovar tu DNI hasta 60 días antes de su fecha de vencimiento.
+                                    Se recomienda hacerlo con anticipación para evitar inconvenientes en trámites
+                                    importantes
+                                    como viajes, gestiones bancarias o procesos administrativos donde el DNI vigente es
+                                    obligatorio.
                                 </div>
                             </div>
 
@@ -414,43 +761,56 @@
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Depende del tipo de documento y del trámite. Algunos casos pueden iniciarse por
-                                    internet,
-                                    mientras que otros requieren atención presencial.
+                                    La renovación puede realizarse de forma virtual o presencial, dependiendo de tu
+                                    situación.
+                                    Si ya cuentas con DNI de adulto, puedes iniciar el trámite por internet. Sin
+                                    embargo,
+                                    si necesitas registrar huellas, cambiar datos importantes o migrar de DNI de menor a
+                                    adulto,
+                                    deberás acudir presencialmente a una oficina del Reniec.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Qué DNI me entregan después de renovar?
+                                    ¿Qué tipo de DNI recibiré después de renovar?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Después de la renovación se emite el DNI electrónico 3.0, con una vigencia de 10
-                                    años,
-                                    salvo en mayores de 60 años, quienes reciben uno con la mención “No caduca”.
+                                    Al finalizar el trámite recibirás el DNI electrónico (DNIe 3.0), que incluye un chip
+                                    con
+                                    tus datos, firma digital y mayor seguridad. Este documento tiene una vigencia de 10
+                                    años.
+                                    En el caso de personas mayores de 60 años, el DNI se emite con la indicación “No
+                                    caduca”.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Cuánto demora la entrega?
+                                    ¿Cuánto tiempo demora la entrega del DNI?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    El tiempo estimado de entrega es de aproximadamente 10 días hábiles, aunque puede
-                                    variar según la sede.
+                                    El tiempo de entrega es aproximadamente de 10 días hábiles. No obstante, este plazo
+                                    puede
+                                    variar según la carga de trabajo de la oficina donde realizaste el trámite. Es
+                                    importante
+                                    verificar el estado de tu solicitud antes de acudir a recogerlo.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Puedo cambiar el lugar de entrega?
+                                    ¿Puedo cambiar el lugar donde recogeré mi DNI?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Sí, al iniciar el trámite puedes solicitar el cambio de lugar de entrega pagando un
-                                    adicional.
+                                    Sí, al momento de iniciar el trámite puedes solicitar el cambio del lugar de
+                                    entrega.
+                                    Este servicio tiene un costo adicional. Una vez elegido el lugar, deberás recoger el
+                                    DNI
+                                    personalmente en esa sede.
                                 </div>
                             </div>
 
@@ -460,8 +820,10 @@
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Si resides fuera del Perú, la renovación del DNI debe realizarse en el consulado
-                                    peruano correspondiente.
+                                    Si resides fuera del Perú, la renovación del DNI se realiza en el consulado peruano
+                                    correspondiente al país donde te encuentres. Allí te indicarán los requisitos y
+                                    pasos
+                                    específicos según tu ubicación.
                                 </div>
                             </div>
 
@@ -497,7 +859,23 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="../../home/script.js" defer></script>
+    <script>
+        function mostrarSeccion(tipo) {
+            document.getElementById('contenido-online').style.display = 'none';
+            document.getElementById('contenido-presencial').style.display = 'none';
 
+            document.getElementById('btn-online').classList.remove('active');
+            document.getElementById('btn-presencial').classList.remove('active');
+
+            if (tipo === 'online') {
+                document.getElementById('contenido-online').style.display = 'block';
+                document.getElementById('btn-online').classList.add('active');
+            } else {
+                document.getElementById('contenido-presencial').style.display = 'block';
+                document.getElementById('btn-presencial').classList.add('active');
+            }
+        }
+    </script>
 </body>
 
 </html>

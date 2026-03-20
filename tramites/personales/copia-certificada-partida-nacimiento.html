@@ -27,6 +27,59 @@
     <link rel="stylesheet" href="../../assets/css/tramitescard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        /* Nota de Reniec */
+        .reniec-note {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff9e6;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #856404;
+        }
+
+        /* Contenedor de las pestañas */
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            /* Espacio entre botones */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        /* Estilo base del botón */
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f8f9fa;
+            color: #6c757d;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+            /* Bordes redondeados arriba */
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        /* Efecto al pasar el mouse */
+        .tab-button:hover {
+            background-color: #e2e6ea;
+            color: #0056b3;
+        }
+
+        /* ESTADO ACTIVO: El que resalta */
+        .tab-button.active {
+            background-color: #2563eb;
+            /* Azul institucional */
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -47,17 +100,19 @@
                                 <a href="/tramites-personales/"><i class="bi bi-chevron-right"></i> Personales </a>
                                 <i class="bi bi-chevron-right"></i>
                             </li>
-                            <li class="font-medium" aria-current="page">Copia Certificada de Partida de Nacimiento –
-                                Cómo solicitarla en RENIEC</li>
+                            <li class="font-medium" aria-current="page">Cómo solicitar copia certificada de acta en
+                                Perú: requisitos, pasos y guía completa</li>
                         </ol>
                     </nav>
                     <header>
-                        <h1 class="textTitle" itemprop="headline">Copia Certificada de Partida de Nacimiento – Cómo
-                            solicitarla en RENIEC</h1>
+                        <h1 class="textTitle" itemprop="headline">Cómo solicitar copia certificada de acta en
+                            Perú: requisitos, pasos y guía completa</h1>
                         <p class="textDescription" itemprop="description">
-                            La copia certificada de partida de nacimiento indispensable en procesos judiciales y
-                            notariales para validar la identidad legal del ciudadano ante las autoridades
-                            correspondientes.
+                            Solicitar una copia certificada de acta en Perú es un trámite esencial para obtener
+                            documentos oficiales como partidas de nacimiento, matrimonio o defunción. Este proceso,
+                            gestionado a través de la Registro Nacional de Identificación y Estado Civil (RENIEC),
+                            permite validar información legal para diversos procedimientos personales, académicos o
+                            administrativos.
                         </p>
                         <article-meta date="16 de febrero, 2026" readtime="12 min de lectura"
                             author="Equipo Editorial"></article-meta>
@@ -73,109 +128,153 @@
                     </section>
                     <section class="contenttramit" aria-label="Contenido del trámite" itemprop="articleBody">
                         <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>¿Qué es este trámite?</h2>
-                        <p class="leading-relaxed">El pasaporte electrónico peruano es un documento de viaje con
-                            chip electrónico que
-                            contiene los datos biométricos del titular. Es emitido por Migraciones y es
-                            indispensable para viajar fuera del territorio peruano.</p>
-                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Quién debe realizarlo?</h2>
-                        <p class="leading-relaxed">Todos los ciudadanos peruanos que deseen viajar fuera del país,
-                            excepto a destinos que acepten solo el DNI (países de la Comunidad Andina y Mercosur).
+                        <p class="leading-relaxed mb-0">La solicitud de copia certificada de acta es un procedimiento
+                            mediante el cual obtienes una copia oficial y validada de un registro civil.
                         </p>
+                        <p class="mt-0">Este documento tiene valor legal y sirve para:</p>
+                        <ul class="listStyle">
+                            <li>Trámites legales y notariales</li>
+                            <li>Matrículas educativas</li>
+                            <li>Procesos laborales</li>
+                            <li>Gestiones en entidades públicas o privadas</li>
+                        </ul>
+                        <p>Es importante porque certifica datos personales registrados oficialmente en Perú.</p>
+                        <h2 class="titleh2"><i class="bi bi-people iconColor"></i>¿Quién debe realizarlo?</h2>
+                        <p class="leading-relaxed">Este trámite está dirigido a:
+                        </p>
+                        <ul class="listStyle">
+                            <li>Personas mayores de edad que necesiten su propia acta</li>
+                            <li>Padres que requieran documentos de sus hijos</li>
+                            <li>Ciudadanos que necesiten actas de terceros (según normativa)</li>
+                            <li>Personas que gestionan trámites legales o administrativos</li>
+                        </ul>
                         <section aria-labelledby="requisitos">
                             <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Requisitos</h2>
-                            <ul style="margin: 15px;">
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    DNI en buen estado y correspondiente a la última emisión.
+                            <p>Para solicitar copia certificada de acta en Perú, necesitas:</p>
+                            <ul class="listStyle">
+                                <li>
+                                    Documento Nacional de Identidad (DNI) vigente
                                 </li>
 
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Comprobante de pago por el derecho del trámite.
+                                <li>
+                                    Pago por derechos administrativos
                                 </li>
 
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Declaración jurada en caso de pérdida o robo del pasaporte, si corresponde.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Para personas mayores con discapacidad que no puedan manifestar su voluntad, el
-                                    padre o madre acompañante debe presentar su DNI vigente (si es peruano) o documento
-                                    de identidad válido si es extranjero.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Si actúa un representante legal, deberá presentar una carta poder simple o poder
-                                    inscrito en Registros Públicos con vigencia no mayor a 30 días, o poder consular
-                                    legalizado o apostillado.
-                                </li>
-
-                                <li class="gap-10">
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
-                                    Documento original que acredite la representación legal mediante resolución judicial
-                                    u otro instrumento público equivalente.
+                                <li>
+                                    Datos completos del titular del acta (nombres y fecha del registro)
                                 </li>
                             </ul>
                         </section>
                         <h2 class="titleh2"><i class="bi bi-journal iconColor"></i>Documentos Necesarios</h2>
-                        <section class="tabla-docs-wrap">
-                            <table class="tabla-docs">
-                                <thead>
-                                    <tr>
-                                        <th>Documento</th>
-                                        <th>Descripción</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>DNI vigente</td>
-                                        <td>Documento Nacional de Identidad en buen estado y vigente</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Comprobante de pago</td>
-                                        <td>Pago realizado en el Banco de la Nación o en línea</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Autorización notarial</td>
-                                        <td>Para menores de edad, firmada por ambos padres</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
-                        <h2 class="titleh2"><i class="bi bi-currency-dollar iconColor"></i>Costos Oficiales</h2>
-                        <section class="tabla-docs-wrap">
-                            <table class="tabla-docs">
-                                <thead>
-                                    <tr>
-                                        <th>Concepto</th>
-                                        <th>Monto</th>
-                                        <th>Notas</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        <p>Los documentos para solicitar copia certificada de acta son:</p>
+                        <ul class="listStyle">
+                            <li>DNI del solicitante</li>
+                            <li>Comprobante de pago del trámite</li>
+                            <li>Información del acta (nacimiento, matrimonio o defunción)</li>
+                        </ul>
 
-                                    <tr>
-                                        <td>Derecho de expedición de pasaporte</td>
-                                        <td>S/ 120.90</td>
-                                        <td>Pago requerido para iniciar el trámite</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Pago adicional por diferencia</td>
-                                        <td>S/ 22.30</td>
-                                        <td>Solo si previamente pagaste S/ 98.60</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </section>
                         <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Paso a Paso</h2>
-                        <section class="container my-5">
+                        <div class="tab-container">
+                            <button onclick="mostrarSeccion('online')" id="btn-online" class="tab-button active">Trámite
+                                Online</button>
+                            <button onclick="mostrarSeccion('presencial')" id="btn-presencial"
+                                class="tab-button">Modalidad presencial en RENIEC</button>
+                            <button onclick="mostrarSeccion('modulo')" id="btn-modulo" class="tab-button">Modulo
+                                RENIEC</button>
+                        </div>
+                        <div id="contenido-online" class="seccion-tramite">
+                            <section class="container my-5">
 
-                            <!-- PASO 1 -->
+                                <!-- PASO 1 -->
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">1</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Verifica el acta en el sistema</h3>
+                                        <p>Ingresa los datos del titular (nombre completo y fecha) para confirmar que el
+                                            acta está digitalizada.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <!-- PASO 2 -->
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">2</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Realiza el pago</h3>
+                                        <ul class="listStyle">
+                                            <li>Monto: S/ 10.30</li>
+                                            <li>Código de tributo: 02141</li>
+                                        </ul>
+                                        <p>Puedes pagar mediante:</p>
+                                        <ul class="listStyle">
+                                            <li>Yape</li>
+                                            <li>Agente BCP</li>
+                                            <li>Plataforma Pagalo.pe del Banco de la Nación</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- PASO 1 -->
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">3</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Solicita el acta</h3>
+                                        <p>Completa la solicitud desde una computadora (no celular) y asegúrate de tener
+                                            una impresora conectada.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 centerStep">
+                                        <div class="d-flex flex-column align-items-center alt80">
+                                            <div class="h-10">
+                                                <div class="numero-circulo">4</div>
+                                            </div>
+                                            <div class="h-90">
+                                                <div class="numero-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                        <h3 class="stepTitle">Imprime tu copia certificada</h3>
+                                        <p>Una vez aprobada, podrás imprimir el documento.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="contenido-presencial" class="seccion-tramite" style="display: none;">
                             <div class="row">
                                 <div class="col-md-1 centerStep">
                                     <div class="d-flex flex-column align-items-center alt80">
@@ -189,25 +288,13 @@
                                 </div>
 
                                 <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Paga el derecho de trámite</h3>
-                                    <p>
-                                        Realiza el pago de <strong>S/ 120.90</strong> por la expedición del pasaporte.
-                                        Puedes hacerlo en la plataforma <strong>Págalo.pe</strong> con tarjeta VISA o
-                                        Mastercard usando el código
-                                        <strong>01810</strong>, o en cualquier oficina del <strong>Banco de la
-                                            Nación</strong> y agentes Multired.
-                                        Al momento de pagar deberás indicar tu número de DNI.
-                                    </p>
-                                    <p>
-                                        Si anteriormente pagaste <strong>S/ 98.60</strong>, deberás cancelar la
-                                        diferencia de
-                                        <strong>S/ 22.30</strong> utilizando el mismo código de pago.
-                                    </p>
+                                    <h3 class="stepTitle">Paga el trámite</h3>
+                                    <ul class="listStyle">
+                                        <li>Monto: S/ 12.00</li>
+                                        <li>Código: 06637</li>
+                                    </ul>
                                 </div>
                             </div>
-
-
-                            <!-- PASO 2 -->
                             <div class="row">
                                 <div class="col-md-1 centerStep">
                                     <div class="d-flex flex-column align-items-center alt80">
@@ -221,23 +308,10 @@
                                 </div>
 
                                 <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Agenda tu cita</h3>
-                                    <p>
-                                        Ingresa al sistema de citas en línea de Migraciones y programa tu atención
-                                        seleccionando la sede
-                                        donde deseas realizar el trámite. Registra tus datos o los de la persona que
-                                        solicitará el pasaporte.
-                                    </p>
-                                    <p>
-                                        Se recomienda imprimir la constancia de la cita o guardar una captura en tu
-                                        celular para agilizar
-                                        la atención el día de tu visita.
-                                    </p>
+                                    <h3 class="stepTitle">Acude a una oficina de RENIEC</h3>
+                                    <p>Presenta tu comprobante y los datos del acta.</p>
                                 </div>
                             </div>
-
-
-                            <!-- PASO 3 -->
                             <div class="row">
                                 <div class="col-md-1 centerStep">
                                     <div class="d-flex flex-column align-items-center alt80">
@@ -251,27 +325,18 @@
                                 </div>
 
                                 <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Acude a tu cita</h3>
-                                    <p>
-                                        El día programado acércate a la sede de Migraciones seleccionada llevando tu
-                                        <strong>DNI vigente</strong> y el <strong>comprobante de pago</strong>.
-                                        Presenta también la constancia de tu cita o la captura de pantalla.
-                                    </p>
-                                    <p>
-                                        Este trámite es presencial, ya que se verificará tu identidad y se tomarán los
-                                        datos
-                                        necesarios para emitir el pasaporte.
-                                    </p>
+                                    <h3 class="stepTitle">Recibe el documento</h3>
+                                    <p>La copia certificada se entrega de forma inmediata si la información está en el
+                                        sistema.</p>
                                 </div>
                             </div>
-
-
-                            <!-- PASO 4 -->
+                        </div>
+                        <div id="contenido-modulo" class="seccion-tramite" style="display: none;">
                             <div class="row">
                                 <div class="col-md-1 centerStep">
                                     <div class="d-flex flex-column align-items-center alt80">
                                         <div class="h-10">
-                                            <div class="numero-circulo">4</div>
+                                            <div class="numero-circulo">1</div>
                                         </div>
                                         <div class="h-90">
                                             <div class="numero-line"></div>
@@ -280,28 +345,17 @@
                                 </div>
 
                                 <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Toma de fotografía biométrica</h3>
-                                    <p>
-                                        Durante tu cita se realizará la toma de la fotografía para el pasaporte
-                                        electrónico.
-                                        Esta imagen debe cumplir con normas internacionales de identificación
-                                        biométrica.
-                                    </p>
-                                    <p>
-                                        Para la foto no debes usar gafas oscuras, lentes de contacto cosméticos,
-                                        sombreros,
-                                        prendas que cubran el rostro ni piercings visibles.
-                                    </p>
+                                    <h3 class="stepTitle">Inicia el trámite</h3>
+                                    <p>Dirígete a un Agente Reniec, elige el trámite de copias certificadas (nacimiento,
+                                        matrimonio o defunción) y valida tu identidad colocando tu huella en el lector
+                                        biométrico</p>
                                 </div>
                             </div>
-
-
-                            <!-- PASO 5 -->
                             <div class="row">
                                 <div class="col-md-1 centerStep">
                                     <div class="d-flex flex-column align-items-center alt80">
                                         <div class="h-10">
-                                            <div class="numero-circulo">5</div>
+                                            <div class="numero-circulo">2</div>
                                         </div>
                                         <div class="h-90">
                                             <div class="numero-line"></div>
@@ -310,153 +364,126 @@
                                 </div>
 
                                 <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
-                                    <h3 class="stepTitle">Recoge tu pasaporte</h3>
-                                    <p>
-                                        Una vez finalizado el proceso podrás recoger tu pasaporte electrónico el mismo
-                                        día de tu cita
-                                        si cumpliste con todos los requisitos.
-                                    </p>
-                                    <p>
-                                        Si no puedes recogerlo inmediatamente, tendrás hasta <strong>60 días</strong>
-                                        para hacerlo en la sede
-                                        donde realizaste el trámite. Pasado ese plazo, el pasaporte será destruido y
-                                        deberás iniciar
-                                        el proceso nuevamente.
-                                    </p>
+                                    <h3 class="stepTitle">Paga en el agente Reniec</h3>
+                                    <p>Cancela el costo del trámite (S/ 12.00) usando efectivo o cualquier tarjeta de
+                                        débito o crédito Visa.</p>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-1 centerStep">
+                                    <div class="d-flex flex-column align-items-center alt80">
+                                        <div class="h-10">
+                                            <div class="numero-circulo">3</div>
+                                        </div>
+                                        <div class="h-90">
+                                            <div class="numero-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        </section>
-                        <h2 class="titleh2"><i class="bi bi-display iconColor"></i>Importante</h2>
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                    <h3 class="stepTitle">Recoge tu documento</h3>
+                                    <p>Finaliza el trámite y recoge tu documento: Una vez completada la emisión en el
+                                        Agente Reniec, el equipo imprimirá tu acta certificada. Asegúrate de verificar
+                                        que todos los datos sean correctos antes de retirarte del módulo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="titleh2"><i class="bi bi-display iconColor"></i>Consejos importantes</h2>
                         <div class="info-card blue">
-
-                            <p>
-                                <strong>Importante:</strong> Si no lograste conseguir una cita y necesitas tu pasaporte
-                                con urgencia,
-                                puedes solicitar una atención especial para la emisión del pasaporte en casos
-                                justificados.
-                            </p>
-
-                            <p>
-                                Este tipo de atención puede solicitarse si necesitas el pasaporte para:
-                            </p>
-
-                            <ul style="margin-left: 25px;">
-                                <li>Tramitar una visa.</li>
-                                <li>Gestionar residencia en otro país.</li>
-                                <li>Participar en un intercambio estudiantil.</li>
-                                <li>Acceder a una beca de estudios.</li>
-                                <li>Otro motivo urgente debidamente sustentado con documentos.</li>
-                            </ul>
-
-                            <p>
-                                Para solicitarlo debes enviar tu pedido a través de la <strong>Mesa de Partes
-                                    Virtual</strong>
-                                de la Agencia Digital de Migraciones. En la solicitud incluye:
-                            </p>
-
-                            <ul style="margin-left: 25px;">
-                                <li>Nombres y apellidos completos.</li>
-                                <li>Número de DNI.</li>
-                                <li>Motivo de la solicitud.</li>
-                                <li>Correo electrónico y teléfono de contacto.</li>
-                                <li>Documentos que respalden la urgencia del trámite.</li>
+                            <ul class="listStyle">
+                                <li>Verifica previamente si el acta está digitalizada</li>
+                                <li>Guarda siempre tu comprobante de pago</li>
+                                <li>Usa una computadora para el trámite online</li>
+                                <li>Asegúrate de ingresar correctamente los datos</li>
                             </ul>
 
                         </div>
                         <h2 class="titleh2"><i class="bi bi-lightbulb iconColor"></i>Consejo de Experto</h2>
                         <div class="info-card green">
-                            <ul class="ulmargin">
-                                <li class="gap-10"><i class="bi bi-lightbulb iconColorgreen"></i> Agenda tu cita con
-                                    anticipación, especialmente en temporada alta de viajes</li>
+                            <ul class="listStyleLight">
+                                <li> Realiza el trámite temprano para evitar colas en oficinas</li>
 
-                                <li class="gap-10"><i class="bi bi-lightbulb iconColorgreen"></i> Verifica que tu
-                                    DNI esté vigente antes de agendar</li>
+                                <li> Si necesitas varias copias, solicita todas en una sola gestión</li>
 
-                                <li class="gap-10"><i class="bi bi-lightbulb iconColorgreen"></i> Si necesitas el
-                                    pasaporte urgente, usa el servicio express</li>
+                                <li> Verifica que los datos impresos sean correctos antes de retirarte</li>
 
-                                <li class="gap-10"><i class="bi bi-lightbulb iconColorgreen"></i> Los menores
-                                    necesitan autorización notarial de AMBOS padres</li>
+                                <li> Usa plataformas digitales para ahorrar tiempo</li>
                             </ul>
                         </div>
-                        <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Errores Comunes</h2>
+                        <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Errores comunes al
+                            realizar el trámite</h2>
+                        <p>Evita estos errores frecuentes:</p>
                         <div class="info-card red">
-                            <ul class="ulmargin">
-                                <li class="gap-10"><i class="bi bi-exclamation-triangle iconColor"></i> No agendar
-                                    cita y presentarse directamente</li>
+                            <ul class="listStyleError">
+                                <li> Ingresar datos incorrectos del titular del acta</li>
 
-                                <li class="gap-10"><i class="bi bi-exclamation-triangle iconColor"></i> Llevar el
-                                    DNI vencido</li>
+                                <li> No verificar si el acta está en el sistema</li>
 
-                                <li class="gap-10"><i class="bi bi-exclamation-triangle iconColor"></i> No pagar la
-                                    tasa antes de la cita</li>
+                                <li> Intentar hacer el trámite online desde el celular</li>
 
-                                <li class="gap-10"><i class="bi bi-exclamation-triangle iconColor"></i> Olvidar la
-                                    autorización notarial para menores</li>
+                                <li> No guardar el comprobante de pago</li>
+                                <li>Pagar con un código de tributo incorrecto</li>
                             </ul>
                         </div>
                         <h2 class="titleh2"><i class="bi bi-question-circle iconColor iconColor"></i>Preguntas
                             Frecuentes</h2>
                         <section class="faq-section">
 
-                            <div class="faq-item active">
+                            <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Cuánto cuesta el pasaporte peruano?
+                                    ¿Cuánto cuesta solicitar una copia certificada de acta en Perú?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    El pasaporte regular cuesta S/ 98.46 y el express (24 horas) cuesta S/ 247.40.
+                                    El costo es de S/ 10.30 si realizas el trámite en línea y S/ 12.00 si lo haces de
+                                    forma presencial.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Cuánto tiempo dura el pasaporte?
+                                    ¿Puedo solicitar el acta de otra persona?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    El pasaporte peruano tiene una vigencia de 5 años.
+                                    Sí, es posible solicitarla siempre que cuentes con los datos completos del titular
+                                    del acta.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Necesito cita para tramitar el pasaporte?
+                                    ¿Qué hacer si el acta no aparece en RENIEC?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Sí, debes agendar una cita en el portal oficial de Migraciones.
+                                    En ese caso, debes solicitarla en la municipalidad donde se realizó el registro
+                                    original o en el Ministerio de Relaciones Exteriores si el hecho ocurrió en el
+                                    extranjero.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Puedo tramitar el pasaporte en el aeropuerto?
+                                    ¿Se puede hacer el trámite desde el celular?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Sí, existe una oficina en el aeropuerto Jorge Chávez para casos urgentes.
+                                    No se recomienda realizarlo desde dispositivos móviles. Lo ideal es utilizar una
+                                    computadora que esté conectada a una impresora para obtener el documento.
                                 </div>
                             </div>
 
                             <div class="faq-item">
                                 <button class="faq-question">
-                                    ¿Puedo renovar mi pasaporte antes de que venza?
+                                    ¿Cuánto demora el trámite?
                                     <span class="icon"><i class="bi bi-chevron-down"></i></span>
                                 </button>
                                 <div class="faq-answer">
-                                    Sí, puedes renovarlo antes de su fecha de vencimiento si lo necesitas.
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    ¿Los menores necesitan pasaporte propio?
-                                    <span class="icon"><i class="bi bi-chevron-down"></i></span>
-                                </button>
-                                <div class="faq-answer">
-                                    Sí, todos los menores deben contar con su propio pasaporte.
+                                    Si el acta ya se encuentra digitalizada en el sistema, la entrega del documento es
+                                    inmediata.
                                 </div>
                             </div>
 
@@ -494,7 +521,27 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="../../home/script.js" defer></script>
+    <script>
+        function mostrarSeccion(tipo) {
+            // 1. Ocultar todos los contenidos
+            const contenidos = ['contenido-online', 'contenido-presencial', 'contenido-modulo'];
+            contenidos.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
 
+            // 2. Quitar la clase 'active' de todos los botones
+            const botones = ['btn-online', 'btn-presencial', 'btn-modulo'];
+            botones.forEach(id => {
+                const btn = document.getElementById(id);
+                if (btn) btn.classList.remove('active');
+            });
+
+            // 3. Mostrar el contenido seleccionado y activar su botón
+            document.getElementById('contenido-' + tipo).style.display = 'block';
+            document.getElementById('btn-' + tipo).classList.add('active');
+        }
+    </script>
 </body>
 
 </html>

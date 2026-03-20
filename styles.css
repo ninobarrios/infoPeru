@@ -63,8 +63,22 @@ a {
 .listStyle li {
     position: relative;
     padding-left: 35px;
-    display: flex;
-    align-items: flex-start;
+
+}
+
+.irVer {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 15px;
+}
+
+.irVer:hover {
+    color: white;
+    background-color: #0050ff;
+    font-weight: 600;
 }
 
 .listStyle li::before {
@@ -255,16 +269,17 @@ a {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
-    max-height: 40px; 
+    max-height: 40px;
     transition: max-height 3s ease;
 }
 
 post-card:hover .postCard__desc {
     -webkit-line-clamp: unset;
     line-clamp: unset;
-    display: block; 
-    max-height: 300px; 
+    display: block;
+    max-height: 300px;
 }
+
 .postCard__meta {
     display: flex;
     align-items: center;
