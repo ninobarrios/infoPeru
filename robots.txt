@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ninobarrios.github.io/infoPeru/sitemap.xml
