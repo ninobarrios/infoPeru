@@ -336,7 +336,7 @@ a {
 
 .catCard__desc {
     margin-top: 5px;
-    color: #64748b;
+    color: #212529;
     font-size: 14px;
     line-height: 1.25;
     overflow: hidden;
@@ -350,7 +350,7 @@ a {
     align-items: center;
     justify-content: space-between;
     font-size: 11px;
-    color: #94a3b8;
+    color: #212529;
     font-weight: 300;
     width: 100%;
 }
