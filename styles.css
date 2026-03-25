@@ -105,8 +105,7 @@ a {
 .listStyleError li {
     position: relative;
     padding-left: 35px;
-    display: flex;
-    align-items: flex-start;
+
 }
 
 .listStyleError li::before {
@@ -134,8 +133,7 @@ a {
 .listStyleLight li {
     position: relative;
     padding-left: 35px;
-    display: flex;
-    align-items: flex-start;
+
 }
 
 .listStyleLight li::before {
