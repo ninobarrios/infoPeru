@@ -2,88 +2,158 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Trámites Personales – TrámitesPeru</title>
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../../assets/css/post-card.css">
-    <link rel="stylesheet" href="../../assets/css/sidebar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trámites Personales – TrámitesPeru</title>
+  <link rel="stylesheet" href="../../estilosMain.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
 
-    <header data-include="../../componentes/navbar-into.html"></header>
-    <!-- Category Hero -->
-    <section class="catHero_migraciones">
-        <div class="container">
+  <div class="topbar py-2 small">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge badge-pill badge-primary mr-2" style="width:10px; height:10px; padding:0;">&nbsp;</span>
+        Información actualizada para Perú 2026
+      </div>
+    </div>
+  </div>
 
-            <nav class="crumbs" aria-label="breadcrumb">
-                <a href="../../index.html">
-                    <i class="bi bi-house"></i>
-                </a>
-                <i class="bi bi-chevron-right"></i>
-                <span>Migraciones</span>
-            </nav>
-
-            <div class="catHero__head">
-                <div class="catHero__badge" aria-hidden="true">
-                    <!-- doc icon -->
-                    <i class="bi bi-airplane-engines"></i>
-                </div>
-
-                <div>
-                    <h1 class="catHero__title">Migraciones</h1>
-                    <p class="catHero__sub">
-                        Guía completa sobre trámites migratorios en el Perú: obtención de pasaporte, prórrogas de
-                        permanencia,
-                        Cambio de Calidad Migratoria, Carné de Extranjería y todos los procesos ante la Superintendencia
-                        Nacional de Migraciones.
-                    </p>
-                    <div class="catHero__count">2 guías disponibles</div>
-                </div>
-            </div>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container mx-auto" style="width: 80% !important; max-width: 80%;">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+        <div class="bg-primary-custom text-white rounded d-flex align-items-center justify-content-center"
+          style="width: 40px; height: 40px;">
+          <i class="bi bi-clipboard-check"></i>
         </div>
-    </section>
+        <div style="line-height: 1.2; margin-left:10px">
+          <strong class="d-block">TrámitesPeru</strong>
+          <small class="text-muted">Guías 2026</small>
+        </div>
+      </a>
 
-    <main>
-        <div class="container-lg px-4 px-lg-5 pb-5">
-            <div class="catGrid">
-                <section class="catCards" aria-label="Listado de guías de trámites laborales">
-                    <post-card title="Obtener Carné de Extranjería en Perú – Requisitos y trámite en Migraciones"
-                        image="../../fotos/carnet extranjeria.jpg" tags='[{"label":"Empleo","color":"blue"}]'
-                        description="Guía completa para ciudadanos extranjeros sobre cómo obtener el carné de extranjería. Requisitos para calidad migratoria de trabajador, familiar o especial."
-                        readtime="4-5 min de lectura" views="12,350" url="carne-extranjeria.html">
-                    </post-card>
+      <div class="d-flex align-items-center order-lg-last">
+        <button class="btn btn-link text-secondary p-2 mr-2" aria-label="Buscar">
+          <i class="bi bi-search"></i>
+        </button>
 
-                    <post-card title="Pasaporte urgente en Perú – Cómo tramitarlo en casos de emergencia"
-                        image="../../fotos/pasaporte urgente.jpg" tags='[{"label":"Derechos","color":"green"}]'
-                        description="¿Tienes un vuelo programado en menos de 48 horas? Conoce los pasos para tramitar tu pasaporte de emergencia en el aeropuerto o sedes de Migraciones."
-                        readtime="4 min de lectura" views="8,920" url="pasaporte-urgente.html">
-                    </post-card>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-                    <post-card title="Tramitar Pasaporte Peruano – Requisitos, costo y pasos"
-                        image="../../fotos/pasaporte.jpg" tags='[{"label":"Empleo","color":"blue"}]'
-                        description="Todo sobre el pasaporte electrónico biométrico: cómo pagar la tasa en el Banco de la Nación, sacar cita virtual y los documentos necesarios para adultos y menores."
-                        readtime="4-5 min de lectura" views="12,350" url="pasaporte.html">
-                    </post-card>
-                </section>
-                <aside class="catSide" aria-label="Sidebar">
-                    <div data-include="../../componentes/site-sidebar.html"></div>
-                </aside>
-            </div>
-    </main>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/personales/index.html">
+              <i class="bi bi-clipboard-check mr-1"></i>Personales
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/finanzas/index.html">
+              <i class="bi bi-cash-coin mr-1"></i>Finanzas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/trabajo/index.html">
+              <i class="bi bi-briefcase mr-1"></i>Trabajo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/negocios/index.html">
+              <i class="bi bi-currency-dollar mr-1"></i>Negocios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/migraciones/index.html">
+              <i class="bi bi-airplane-engines mr-1"></i>Migraciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/salud/index.html">
+              <i class="bi bi-heart-pulse mr-1"></i>Salud
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/educacion/index.html">
+              <i class="bi bi-pencil-square mr-1"></i>Educación
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- Category Hero -->
+  <section class="catHero_migraciones">
+    <div class="container">
 
-    <div data-include="../../componentes/site-footerInto.html"></div>
-    <script defer src="../../assets/js/site-footer.js"></script>
-    <script defer src="../../assets/js/includes.js"></script>
-    <script defer src="../../assets/js/post-card.js"></script>
-    <script defer src="../../assets/js/site-sidebar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+      <nav class="crumbs" aria-label="breadcrumb">
+        <a href="../../index.html">
+          <i class="bi bi-house"></i>
+        </a>
+        <i class="bi bi-chevron-right"></i>
+        <span>Migraciones</span>
+      </nav>
+
+      <div class="catHero__head">
+        <div class="catHero__badge" aria-hidden="true">
+          <!-- doc icon -->
+          <i class="bi bi-airplane-engines"></i>
+        </div>
+
+        <div>
+          <h1 class="catHero__title">Migraciones</h1>
+          <p class="catHero__sub">
+            Guía completa sobre trámites migratorios en el Perú: obtención de pasaporte, prórrogas de
+            permanencia,
+            Cambio de Calidad Migratoria, Carné de Extranjería y todos los procesos ante la Superintendencia
+            Nacional de Migraciones.
+          </p>
+          <div class="catHero__count">2 guías disponibles</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <main>
+    <div class="container-lg px-4 px-lg-5 pb-5">
+      <div class="catGrid">
+        <section class="catCards" aria-label="Listado de guías de trámites laborales">
+          <post-card title="Obtener Carné de Extranjería en Perú – Requisitos y trámite en Migraciones"
+            image="../../fotos/carnet extranjeria.jpg" tags='[{"label":"Empleo","color":"blue"}]'
+            description="Guía completa para ciudadanos extranjeros sobre cómo obtener el carné de extranjería. Requisitos para calidad migratoria de trabajador, familiar o especial."
+            readtime="4-5 min de lectura" views="12,350" url="carne-extranjeria.html">
+          </post-card>
+
+          <post-card title="Pasaporte urgente en Perú – Cómo tramitarlo en casos de emergencia"
+            image="../../fotos/pasaporte urgente.jpg" tags='[{"label":"Derechos","color":"green"}]'
+            description="¿Tienes un vuelo programado en menos de 48 horas? Conoce los pasos para tramitar tu pasaporte de emergencia en el aeropuerto o sedes de Migraciones."
+            readtime="4 min de lectura" views="8,920" url="pasaporte-urgente.html">
+          </post-card>
+
+          <post-card title="Tramitar Pasaporte Peruano – Requisitos, costo y pasos" image="../../fotos/pasaporte.jpg"
+            tags='[{"label":"Empleo","color":"blue"}]'
+            description="Todo sobre el pasaporte electrónico biométrico: cómo pagar la tasa en el Banco de la Nación, sacar cita virtual y los documentos necesarios para adultos y menores."
+            readtime="4-5 min de lectura" views="12,350" url="pasaporte.html">
+          </post-card>
+        </section>
+        <aside class="catSide" aria-label="Sidebar">
+          <div data-include="../../componentes/site-sidebar.html"></div>
+        </aside>
+      </div>
+  </main>
+
+  <div data-include="../../componentes/site-footerInto.html"></div>
+  <script defer src="../../assets/js/site-footer.js"></script>
+  <script defer src="../../assets/js/includes.js"></script>
+  <script defer src="../../assets/js/post-card.js"></script>
+  <script defer src="../../assets/js/site-sidebar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
 </body>
 

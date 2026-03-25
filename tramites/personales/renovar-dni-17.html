@@ -5,10 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Trámites Personales – TrámitesPeru</title>
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../../assets/css/post-card.css">
-    <link rel="stylesheet" href="../../assets/css/sidebar.css">
-    <link rel="stylesheet" href="../../assets/css/tramitescard.css">
+    <link rel="stylesheet" href="../../estilosMain.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
@@ -146,8 +143,82 @@
 </head>
 
 <body>
-    <header data-include="../../componentes/navbar-into.html"></header>
+    <div class="topbar py-2 small">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="badge badge-pill badge-primary mr-2"
+                    style="width:10px; height:10px; padding:0;">&nbsp;</span>
+                Información actualizada para Perú 2026
+            </div>
+        </div>
+    </div>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container mx-auto" style="width: 80% !important; max-width: 80%;">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <div class="bg-primary-custom text-white rounded d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px;">
+                    <i class="bi bi-clipboard-check"></i>
+                </div>
+                <div style="line-height: 1.2; margin-left:10px">
+                    <strong class="d-block">TrámitesPeru</strong>
+                    <small class="text-muted">Guías 2026</small>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center order-lg-last">
+                <button class="btn btn-link text-secondary p-2 mr-2" aria-label="Buscar">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                    data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/personales/index.html">
+                            <i class="bi bi-clipboard-check mr-1"></i>Personales
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/finanzas/index.html">
+                            <i class="bi bi-cash-coin mr-1"></i>Finanzas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/trabajo/index.html">
+                            <i class="bi bi-briefcase mr-1"></i>Trabajo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/negocios/index.html">
+                            <i class="bi bi-currency-dollar mr-1"></i>Negocios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/migraciones/index.html">
+                            <i class="bi bi-airplane-engines mr-1"></i>Migraciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/salud/index.html">
+                            <i class="bi bi-heart-pulse mr-1"></i>Salud
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../../tramites/educacion/index.html">
+                            <i class="bi bi-pencil-square mr-1"></i>Educación
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main class="main">
         <div class="container catLayout">
             <div class="catGrid">
@@ -668,7 +739,7 @@
                                 <strong>Importante:</strong> Antes de iniciar tu trámite, ten en cuenta lo siguiente:
                             </p>
 
-                            <ul style="margin-left: 25px;">
+                            <ul class="listStyle">
                                 <li>Puedes renovar tu DNI hasta 60 días antes de su vencimiento para evitar
                                     inconvenientes en otros trámites.</li>
                                 <li>Si tienes discapacidad permanente, el trámite es gratuito y debe hacerse
@@ -685,7 +756,7 @@
                         <h2 class="titleh2"><i class="bi bi-lightbulb iconColor"></i>Consejo de Experto</h2>
                         <p>Para que tu renovación sea más rápida y sin problemas:</p>
                         <div class="info-card green">
-                            <ul class="ulmargin">
+                            <ul class="listStyleLight">
                                 <li>
                                     <i class="bi bi-lightbulb iconColorgreen"></i>
                                     Realiza la renovación antes de que tu DNI venza, así evitarás dificultades en
@@ -715,24 +786,20 @@
                         <h2 class="titleh2"><i class="bi bi-exclamation-triangle iconColor"></i>Errores Comunes</h2>
                         <p>Evita estos problemas frecuentes durante el trámite:</p>
                         <div class="info-card red">
-                            <ul class="ulmargin">
+                            <ul class="listStyleError">
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Pagar con un código de tributo incorrecto.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Subir una foto que no cumple los requisitos establecidos.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     No llevar los documentos necesarios si deseas actualizar información personal.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Ir a recoger tu DNI sin verificar antes que el trámite esté completo (100%).
                                 </li>
                             </ul>

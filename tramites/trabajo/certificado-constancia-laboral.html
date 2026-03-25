@@ -14,8 +14,80 @@
 </head>
 
 <body>
-    <header data-include="../../componentes/navbar-into.html"></header>
+<div class="topbar py-2 small">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="badge badge-pill badge-primary mr-2" style="width:10px; height:10px; padding:0;">&nbsp;</span>
+        Información actualizada para Perú 2026
+      </div>
+    </div>
+  </div>
 
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container mx-auto" style="width: 80% !important; max-width: 80%;">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+        <div class="bg-primary-custom text-white rounded d-flex align-items-center justify-content-center"
+          style="width: 40px; height: 40px;">
+          <i class="bi bi-clipboard-check"></i>
+        </div>
+        <div style="line-height: 1.2; margin-left:10px">
+          <strong class="d-block">TrámitesPeru</strong>
+          <small class="text-muted">Guías 2026</small>
+        </div>
+      </a>
+
+      <div class="d-flex align-items-center order-lg-last">
+        <button class="btn btn-link text-secondary p-2 mr-2" aria-label="Buscar">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/personales/index.html">
+              <i class="bi bi-clipboard-check mr-1"></i>Personales
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/finanzas/index.html">
+              <i class="bi bi-cash-coin mr-1"></i>Finanzas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/trabajo/index.html">
+              <i class="bi bi-briefcase mr-1"></i>Trabajo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/negocios/index.html">
+              <i class="bi bi-currency-dollar mr-1"></i>Negocios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/migraciones/index.html">
+              <i class="bi bi-airplane-engines mr-1"></i>Migraciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/salud/index.html">
+              <i class="bi bi-heart-pulse mr-1"></i>Salud
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../../tramites/educacion/index.html">
+              <i class="bi bi-pencil-square mr-1"></i>Educación
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <main class="main">
         <div class="container catLayout">
             <div class="catGrid">
