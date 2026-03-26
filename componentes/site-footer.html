@@ -29,15 +29,14 @@
     <div class="footerCol">
       <div class="footerTitle">Categorías</div>
       <ul class="footerList">
-        <li><a href="tramites/personales/index.html">Personales</a></li>
+        <li><a href="tramites/personales /">Personales</a></li>
 
-        <li><a href="tramites/finanzas/index.html">Finanzas</a></li>
-        <li><a href="tramites/trabajo/index.html">Trabajo</a></li>
-        <li><a href="tramites/negocios/index.html">Negocios</a></li>
-        <li><a href="tramites/migraciones/index.html">Migraciones</a></li>
-        <li><a href="tramites/salud/index.html">Salud</a></li>
-        <li><a href="tramites/educacion/index.html">Educación</a></li>
-        <li><a href="tramites/tecnologia/index.html">Tecnología</a></li>
+        <li><a href="tramites/finanzas /">Finanzas</a></li>
+        <li><a href="tramites/trabajo /">Trabajo</a></li>
+        <li><a href="tramites/negocios /">Negocios</a></li>
+        <li><a href="tramites/migraciones /">Migraciones</a></li>
+        <li><a href="tramites/salud /">Salud</a></li>
+        <li><a href="tramites/educacion /">Educación</a></li>
       </ul>
     </div>
 
@@ -55,21 +54,14 @@
 
     <!-- Contact -->
     <div class="footerCol">
-      <div class="footerTitle">Contacto</div>
 
-      <div class="footerContact">
-        <i class="bi bi-envelope"></i>
-        <a href="mailto:contacto@tramitesperu.com">
-          contacto@tramitesperu.com
-        </a>
-      </div>
 
       <div class="footerTitle footerTitle--sub">Suscríbete</div>
-      <form class="footerForm" id="newsletterForm">
-        <input class="footerInput" id="newsletterEmail" type="email" placeholder="tu@email.com" required />
-        <button class="footerBtn" type="submit">OK</button>
+      <form class="footerForm" id="newsletterForm" action="https://formspree.io/f/mjgpvnlb" method="POST">
+        <input class="footerInput" id="newsletterEmail" type="email" name="email" placeholder="tu@email.com" required />
+        <button class="footerBtn" type="submit" id="footerBtn">OK</button>
       </form>
-
+      <p id="footerMsg" style="display:none; font-size: 12px; margin-top: 8px; font-weight: bold;"></p>
       <div id="newsletterMsg" class="footerMsg"></div>
     </div>
 
@@ -80,12 +72,6 @@
   <div class="container footer__bottom">
     <div class="footerCopy">
       © 2026 TrámitesPeru. Todos los derechos reservados.
-    </div>
-
-    <div class="footerLinks">
-      <a href="#">Política de privacidad</a>
-      <a href="#">Términos de uso</a>
-      <a href="#">Sitemap</a>
     </div>
   </div>
 </footer>

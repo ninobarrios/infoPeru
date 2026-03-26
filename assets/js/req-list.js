@@ -75,7 +75,7 @@ class ReqList extends HTMLElement {
 
   itemTemplate(it, idx) {
     const title = it.title ? `<strong>${this.escape(it.title)}</strong>` : '';
-    const desc = it.description ? ` ${this.allowHtml && it.html ? it.description : this.escape(it.description)}` : (it.html && this.allowHtml ? it.html : '');
+    const desc = it.description ? ` ${this.allowHtml && it ? it.description : this.escape(it.description)}` : (it && this.allowHtml ? it : '');
     const display = `${title}${desc}`;
     const removeBtn = this.editable ? `<button class="req-remove" data-idx="${idx}" type="button" aria-label="Eliminar requisito ${idx+1}">✕</button>` : '';
     return `

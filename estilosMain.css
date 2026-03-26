@@ -811,6 +811,7 @@ a {
 .subscribe-msg {
     font-size: 13px;
     margin-top: 6px;
+    color: white !important;
 }
 
 /* ===== Hover sofisticado para items ===== */
@@ -1808,7 +1809,7 @@ post-card:hover .postCard__desc {
 }
 
 .footerTitle--sub {
-    margin-top: 18px;
+    margin-top: 0px;
 }
 
 .footerList {
