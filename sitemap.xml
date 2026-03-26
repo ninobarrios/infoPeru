@@ -79,7 +79,8 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/personales/copia-certificada-partida-nacimiento</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/personales/copia-certificada-partida-nacimiento</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -103,7 +104,8 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -121,7 +123,8 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/negocios/obtener-licencia-de-funcionamiento-municipal</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/negocios/obtener-licencia-de-funcionamiento-municipal</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -133,13 +136,15 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/migraciones/como-obtener-pasaporte-urgente-en-peru</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/migraciones/como-obtener-pasaporte-urgente-en-peru</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/migraciones/sacar-pasaporte-electronico-biometrico</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/migraciones/sacar-pasaporte-electronico-biometrico</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -151,9 +156,25 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://tramitesperuanos.online/tramites/educacion/postular-beca-18-pronabec-convocatoria</loc>
+        <loc>
+            https://tramitesperuanos.online/tramites/educacion/postular-beca-18-pronabec-convocatoria</loc>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+        <url>
+        <loc>https://tramitesperuanos.online/aviso-legal</loc>
+        <lastmod>2026-03-26</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://tramitesperuanos.online/politica-privacidad</loc>
+        <lastmod>2026-03-26</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://tramitesperuanos.online/contacto</loc>
+        <lastmod>2026-03-26</lastmod>
+        <priority>0.3</priority>
     </url>
 </urlset>
