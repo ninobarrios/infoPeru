@@ -9,7 +9,6 @@ class PostCard extends HTMLElement {
     const views = this.getAttribute("views") || "";
     const url = this.getAttribute("url") || "#";
 
-    // 🔥 NUEVO: múltiples tags
     const tagsAttr = this.getAttribute("tags");
     let tags = [];
 
@@ -23,8 +22,15 @@ class PostCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="postCard">
-        <a class="postCard__media" href="${url}">
-          <img src="${image}" alt="${alt}">
+        <a class="postCard__media" href="${url}" aria-label="Leer más sobre ${title}">
+          <img 
+            src="${image}" 
+            alt="${alt}" 
+            width="362" 
+            height="241"
+            loading="lazy" 
+            decoding="async"
+            style="object-fit: cover;">
         </a>
 
         <div class="postCard__body">
