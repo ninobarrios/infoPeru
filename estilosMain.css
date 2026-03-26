@@ -2189,3 +2189,9 @@ post-card:hover .postCard__desc {
 .heroSection {
   background: linear-gradient(145deg, #1e40af, #2563eb) !important; /* Gradiente profesional */
 }
+.navbar.sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important; /* Esto la pone por encima de cualquier otra sección */
+    background-color: #ffffff !important; /* Asegura que no sea transparente */
+}
