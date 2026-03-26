@@ -50,6 +50,57 @@
     return []; 
   }
 
+  function waitForSidebarAndInit(timeout = 3000) {
+    const start = Date.now();
+
+    const check = async () => {
+      const sidebar = document.querySelector("[data-sidebar]");
+      if (!sidebar) {
+        if (Date.now() - start < timeout) {
+          requestAnimationFrame(check);
+        } else {
+          console.warn("site-sidebar: sidebar no encontrado en DOM");
+        }
+        return;
+      }
+
+      const olMost = sidebar.querySelector(".sideList");
+      const ulRecent = sidebar.querySelector(".recent-list");
+      const form = sidebar.querySelector(".subscribe-form");
+      const msg = sidebar.querySelector(".subscribe-msg");
+
+      const mostAttr = sidebar.getAttribute("data-most-read");
+      const recentAttr = sidebar.getAttribute("data-recent");
+
+      const most = await loadDataOrFallback(mostAttr, "../../data/most-read.json");
+      const recent = await loadDataOrFallback(recentAttr, "../../data/recent.json");
+
+      if (olMost) olMost.innerHTML = renderMostRead(most);
+      if (ulRecent) ulRecent.innerHTML = renderRecent(recent);
+
+      if (form) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault(); 
+
+          const email = (form.email && form.email.value || "").trim();
+          if (!email) {
+            showMsg("Ingresa un correo válido", true);
+            return;
+          }
+        });
+      }
+
+      function showMsg(text, isError) {
+        if (!msg) return;
+        msg.style.display = "block";
+        msg.textContent = text;
+        msg.style.color = isError ? "#b91c1c" : "#065f46";
+        setTimeout(() => msg.style.display = "none", 4000);
+      }
+    };
+
+    check();
+  }
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => waitForSidebarAndInit(4000));
