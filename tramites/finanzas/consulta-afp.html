@@ -2,13 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trámites Personales – TrámitesPeru</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/assets/css/post-card.css">
-    <link rel="stylesheet" href="/assets/css/sidebar.css">
-    <link rel="stylesheet" href="/assets/css/tramitescard.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cómo Saber en qué AFP estoy y Consultar Estado de Cuenta 2026 – TrámitesPeru</title>
+    
+    <meta name="description" content="Guía 2026: Consulta tu reporte de afiliación en la SBS y mira tu estado de cuenta en AFP Integra, Prima, Habitat o Profuturo. Pasos para ver tus aportes y fondo acumulado." />
+    
+    <link rel="canonical" href="https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html" />
+    <meta name="robots" content="index, follow" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cómo consultar tu AFP y Estado de Cuenta en Perú",
+      "description": "Pasos para identificar tu AFP en la SBS y acceder a tu fondo acumulado y aportes mensuales online.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Identificación en el Portal SBS",
+          "text": "Ingresa al reporte de afiliación de la SBS con tu DNI para conocer tu AFP actual (Integra, Prima, Habitat o Profuturo) y tu código CUSPP.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html#sbs"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Acceso a Zona de Usuarios",
+          "text": "Visita la web oficial de tu AFP e ingresa a 'Mi Cuenta' con tu DNI y clave personal. Si no tienes clave, solicítala vía correo.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html#login"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Consulta de Fondo y Aportes",
+          "text": "Revisa tu fondo acumulado, rentabilidad y verifica que tu empleador esté realizando los depósitos mensuales en la sección de movimientos.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html#fondo"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Canales Alternativos",
+          "text": "Usa las aplicaciones móviles con biometría facial o atención telefónica para consultas rápidas sin ir a la oficina.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html#canales"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://ninobarrios.github.io/infoPeru/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Personales",
+        "item": "https://ninobarrios.github.io/infoPeru/tramites/personales/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Consulta AFP",
+        "item": "https://ninobarrios.github.io/infoPeru/tramites/personales/consulta-afp-estado-cuenta.html"
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../../estilosMain.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
@@ -100,7 +162,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/tramites-personales/"><i class="bi bi-chevron-right"></i> Finanzas </a> <i
+                                <a href="../finanzas/index.html"><i class="bi bi-chevron-right"></i> Finanzas </a> <i
                                     class="bi bi-chevron-right"></i>
                             </li>
                             <li class="font-medium" aria-current="page">Consultar RUC en SUNAT – Cómo verificar datos de
@@ -122,7 +184,7 @@
                         <article-actions></article-actions>
                         <div class="article-actions" role="toolbar" aria-hidden="true"></div>
                         <figure class="hero-figure">
-                            <img class="hero-img" src="../../fotos/ruc.jpg" alt="Documentos y mesa de trabajo"
+                            <img class="hero-img" src="../../fotos/afp.jpg" alt="Documentos y mesa de trabajo"
                                 width="1400" height="800" loading="eager" itemprop="image">
                         </figure>
                     </section>
@@ -220,7 +282,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor" id="sbs">
                                     <h3 class="stepTitle">Identifica tu AFP en el portal de la SBS</h3>
                                     <p>
                                         Si desconoces a qué administradora perteneces, ingresa al portal oficial de la
@@ -248,7 +310,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor" id="login">
                                     <h3 class="stepTitle">Ingresa a la zona de usuarios de tu AFP</h3>
                                     <p>
                                         Una vez confirmada tu entidad, visita el sitio web oficial de dicha AFP y busca
@@ -276,7 +338,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor" id="fondo">
                                     <h3 class="stepTitle">Consulta tu Estado de Cuenta y Aportes</h3>
                                     <p>
                                         Dentro de tu panel personal, podrás visualizar tu <strong>Fondo
@@ -303,7 +365,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor" id="canales">
                                     <h3 class="stepTitle">Canales alternativos de atención</h3>
                                     <p>
                                         Además de la web, todas las AFP en el Perú cuentan con canales digitales y
