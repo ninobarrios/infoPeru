@@ -2,13 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trámites Personales – TrámitesPeru</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/assets/css/post-card.css">
-    <link rel="stylesheet" href="/assets/css/sidebar.css">
-    <link rel="stylesheet" href="/assets/css/tramitescard.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cómo Sacar Cita en el SIS Online y Presencial 2026 – TrámitesPeru</title>
+
+    <meta name="description"
+        content="Guía 2026: Pasos para solicitar tu cita médica en el SIS. Aprende cómo reservar por internet, teléfono o presencial en hospitales como el Loayza." />
+
+    <link rel="canonical" href="https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html" />
+    <meta name="robots" content="index, follow" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cómo sacar una cita médica en el SIS Perú",
+      "description": "Procedimiento paso a paso para reservar citas de salud mediante canales virtuales y presenciales para afiliados al SIS y pacientes particulares.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Solicitud de Cita",
+          "text": "Elige el canal (web, teléfono o presencial). Si es en el Hospital Loayza, dirígete al Módulo Único de Atención (MUA) con tu DNI.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html#solicitud"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Validación de Identidad",
+          "text": "Ingresa tu número de documento y verifica tus datos. Los afiliados al SIS deben seleccionar su referencia aprobada.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html#validar"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Selección de Especialidad y Turno",
+          "text": "Elige la especialidad médica, el doctor disponible y el horario (mañana o tarde) que prefieras.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html#horario"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Confirmación del Registro",
+          "text": "Verifica los datos finales y guarda la captura de pantalla o el correo de confirmación que enviará el sistema.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html#confirmar"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Asistencia a la Consulta",
+          "text": "Acude al hospital 30 minutos antes con tu DNI y el comprobante de cita. Los pacientes particulares deben realizar el pago previo.",
+          "url": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html#asistencia"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://ninobarrios.github.io/infoPeru/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Salud",
+        "item": "https://ninobarrios.github.io/infoPeru/tramites/salud/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Sacar Cita SIS",
+        "item": "https://ninobarrios.github.io/infoPeru/tramites/salud/sacar-cita-sis.html"
+      }]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../../estilosMain.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
@@ -107,23 +176,19 @@
                             <h2 class="titleh2"><i class="bi bi-check-circle iconColor"></i>Requisitos</h2>
                             <ul class="listStyle">
                                 <li>
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
                                     Documento de identidad vigente.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
                                     Correo electrónico activo y número de celular, si harás la cita por internet.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
                                     Si estás afiliado al SIS, debes contar con una referencia aprobada para la atención
                                     en el hospital.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-check-circle iconColorgreen"></i>
                                     Si eres paciente particular, debes asumir el costo de la consulta.
                                 </li>
                             </ul>
@@ -201,7 +266,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor"
+                                    id="solicitud">
                                     <h3 class="stepTitle">Solicita tu cita</h3>
                                     <p>
                                         Puedes pedir tu cita por internet, de forma presencial o por teléfono, según el
@@ -228,7 +294,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor"
+                                    id="validar">
                                     <h3 class="stepTitle">Valida tus datos</h3>
                                     <p>
                                         Si haces el trámite online, selecciona el tipo de documento, ingresa tu número y
@@ -255,7 +322,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor"
+                                    id="horario">
                                     <h3 class="stepTitle">Elige especialidad, médico y horario</h3>
                                     <p>
                                         Selecciona la especialidad médica disponible, el profesional que deseas y la
@@ -281,7 +349,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor"
+                                    id="confirmar">
                                     <h3 class="stepTitle">Confirma la cita y verifica los datos</h3>
                                     <p>
                                         Al finalizar, el sistema mostrará una confirmación de tu cita. Se recomienda
@@ -305,7 +374,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor">
+                                <div class="col-md-11 d-flex flex-column justify-content-center w-90 bgColor"
+                                    id="asistencia">
                                     <h3 class="stepTitle">Asiste a tu consulta</h3>
                                     <p>
                                         El día de la cita, acude al hospital con al menos 30 minutos de anticipación.
@@ -330,7 +400,7 @@
                                 con una referencia aprobada para el hospital donde deseas atenderte.
                             </p>
 
-                            <ul style="margin-left: 25px;">
+                            <ul class="listStyle">
                                 <li>Si eres paciente particular, deberás pagar el costo de la cita.</li>
                                 <li>El pago debe hacerse dentro de las primeras 72 horas después de registrar la cita.
                                 </li>
@@ -345,25 +415,21 @@
                         <div class="info-card green">
                             <ul class="listStyleLight">
                                 <li>
-                                    <i class="bi bi-lightbulb iconColorgreen"></i>
                                     Revisa con anticipación que tu referencia SIS esté aprobada antes de intentar sacar
                                     la cita.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-lightbulb iconColorgreen"></i>
                                     Guarda el correo o la captura de la confirmación para evitar problemas el día de tu
                                     consulta.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-lightbulb iconColorgreen"></i>
                                     Llega antes de la hora programada para facilitar tu ingreso y registro en el
                                     hospital.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-lightbulb iconColorgreen"></i>
                                     Si eres paciente particular, realiza el pago lo antes posible para no perder la
                                     reserva.
                                 </li>
@@ -374,23 +440,19 @@
                         <div class="info-card red">
                             <ul class="listStyleError">
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Intentar programar una cita SIS sin tener una referencia aprobada.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Ingresar mal el correo electrónico o el número de celular al momento de registrar la
                                     cita.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     No verificar los datos de la cita antes de finalizar el trámite.
                                 </li>
 
                                 <li>
-                                    <i class="bi bi-exclamation-triangle iconColor"></i>
                                     Llegar tarde al consultorio el día de la atención.
                                 </li>
                             </ul>
