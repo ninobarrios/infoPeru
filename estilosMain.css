@@ -2292,6 +2292,7 @@ post-card:hover .postCard__desc {
   font-size: 0.8rem;
   background-color: rgba(255,255,255,0.9);
   color: #1a1a1a;
+  display: none;
 }
 
 /* Colores de fondo para los placeholders (basados en tus tags) */
@@ -2310,4 +2311,10 @@ post-card:hover .postCard__desc {
 
 .bg-red {
   background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+.list-group-item:hover{
+
+    color: #0050ff !important;
+
+    
 }
