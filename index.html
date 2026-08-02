@@ -29,7 +29,7 @@
             "name": "TrámitesPerú",
             "logo": {
             "@type": "ImageObject",
-            "url": "https://tramitesperuanos.online/logo.png" 
+            "url": "https://tramitesperuanos.online/logo.png"
             }
         }
         }
@@ -47,16 +47,12 @@
     <meta name="twitter:description" content="Guías paso a paso para trámites ciudadanos en Perú (Edición 2026)." />
     <meta name="twitter:image" content="https://tramitesperuanos.online/fotos/favicon.png" />
 
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="estilosMain.css" />
-
 
     <link rel="icon" type="image/png" href="https://tramitesperuanos.online/fotos/favicon.png" />
     <link rel="apple-touch-icon" href="https://tramitesperuanos.online/fotos/favicon.png">
@@ -67,903 +63,250 @@
 
 <body>
 
-    <div class="topbar py-2 small">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <span class="badge badge-pill badge-primary mr-2"
-                    style="width:10px; height:10px; padding:0;">&nbsp;</span>
-                Información actualizada para Perú 2026
-            </div>
-
-        </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
-        <div class="container mx-auto" style="width: 80% !important; max-width: 80%;">
-            <a class="navbar-brand d-flex align-items-center" href=" ">
-                <div class="bg-primary-custom text-white rounded d-flex align-items-center justify-content-center"
-                    style="width: 40px; height: 40px;">
-                    <i class="bi bi-clipboard-check"></i>
-                </div>
-                <div style="line-height: 1.2; margin-left:10px">
-                    <strong class="d-block">TrámitesPeruanos</strong>
-                    <small class="text-muted">Guías 2026</small>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container mx-auto">
+            <a class="navbar-brand" href="/">
+                <span class="bg-primary-custom" style="width:28px;height:28px;"></span>
+                TRÁMITES—PE
             </a>
 
-            <div class="d-flex align-items-center order-lg-last">
-
-
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
-                    data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+            <button class="navbar-toggler border-0" type="button" id="navToggle" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
-                <ul class="navbar-nav mt-3 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/personales/">
-                            <i class="bi bi-clipboard-check mr-5"></i>Personales
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/finanzas/">
-                            <i class="bi bi-cash-coin mr-5"></i>Finanzas
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/trabajo/">
-                            <i class="bi bi-briefcase mr-5"></i>Trabajo
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/negocios/">
-                            <i class="bi bi-currency-dollar mr-5"></i>Negocios
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/migraciones/">
-                            <i class="bi bi-airplane-engines mr-5"></i>Migraciones
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/salud/">
-                            <i class="bi bi-heart-pulse mr-5"></i>Salud
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="tramites/educacion/">
-                            <i class="bi bi-pencil-square mr-5"></i>Educación
-                        </a>
-                    </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="tramites/personales/">Personales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tramites/finanzas/">Finanzas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tramites/trabajo/">Trabajo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tramites/migraciones/">Migraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tramites/salud/">Salud</a></li>
                 </ul>
             </div>
+
+            <button class="searchTrigger" id="cmdkTrigger" type="button" aria-haspopup="dialog">
+                <i class="bi bi-search"></i> Buscar <kbd>/</kbd>
+            </button>
         </div>
     </nav>
-    <main class="hero">
-        <div class="hero__bgDots" aria-hidden="true"></div>
 
-        <div class="container hero__inner">
-            <div class="heroFlex">
-                <div>
-                    <div class="pill">
-                        <span class="pill__icon" aria-hidden="true">
-                            <i class="bi bi-circle-fill iconColorgreen"></i>
-                        </span>
-                        Actualizado 2026
-                    </div>
+    <main class="hero2">
+        <div class="container">
+            <div class="hero2__eyebrow">Actualizado · agosto 2026</div>
 
-                    <h1 class="hero__title" style="text-align:left">
-                        Resuelve tu trámite<br />
-                        <span>sin perder la tarde en una fila</span>
-                    </h1>
+            <h1 class="hero2__title" id="heroTitle">
+                <span class="word"><span>Tu</span></span> <span class="word"><span>trámite,</span></span><br />
+                <span class="word"><span>sin</span></span> <span class="word"><span>vueltas</span></span> <span class="word"><span>ni</span></span> <span class="word"><em><span>sorpresas.</span></em></span>
+            </h1>
 
-                    <p class="hero__subtitle" style="margin:0 0 26px;text-align:left">
-                        Requisitos, costos en soles y pasos exactos para tus trámites en RENIEC, SUNAT, MTC y
-                        Migraciones — explicados paso a paso.
-                    </p>
+            <p class="hero2__sub">
+                Requisitos, costos exactos en soles y el paso a paso real para tus trámites en RENIEC, SUNAT, MTC
+                y Migraciones — sin relleno, sin letra chica.
+            </p>
 
-                    <div class="search" id="siteSearch">
-                        <span class="search__icon" aria-hidden="true"><i class="bi bi-search"></i></span>
-                        <input type="text" class="search__input" id="searchInput" autocomplete="off"
-                            aria-label="Buscar trámite"
-                            placeholder="Busca tu trámite: DNI, pasaporte, RUC, brevete…">
-                        <button class="search__btn" id="searchBtn" type="button">Buscar</button>
-                        <div class="search__results" id="searchResults" role="listbox"></div>
-                    </div>
-                </div>
-
-                <div class="heroStub">
-                    <div class="heroStub__eyebrow">Expediente N.º 2026-017</div>
-                    <div class="heroStub__num">18</div>
-                    <div class="heroStub__label">guías paso a paso publicadas, con costos y enlaces oficiales
-                        verificados</div>
-                    <div class="heroStub__foot">
-                        <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-                        Fuentes: RENIEC · SUNAT · MTC · Migraciones
-                    </div>
-                </div>
+            <div class="hero2__actions">
+                <button class="btnPrimary" id="cmdkTriggerBtn" type="button">
+                    <i class="bi bi-search"></i> Buscar un trámite
+                </button>
+                <a class="btnGhost" href="#categorias">Ver las 7 categorías →</a>
             </div>
 
-            <div class="container pb-5" style="margin-top:44px;">
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
-
-                    <div class="col">
-                        <div class="card h-100 actionCard shadow">
-                            <div class="card-body text-center p-4">
-                                <i class="bi bi-fingerprint display-4 text-primary mb-3"></i>
-                                <p class="text-muted small mb-1">RENIEC</p>
-                                <h6 class="card-title fw-semibold text-dark mb-3">Guía completa para tu Documento de
-                                    Identidad</h6>
-                                <a href="tramites/personales/renovar-dni-menores-edad"
-                                    class="btn btn-primary w-100 stretched-link">
-                                    Sacar o Renovar DNI
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 actionCard shadow">
-                            <div class="card-body text-center p-4">
-                                <i class="bi bi-person-video2 display-4 text-primary mb-3"></i>
-                                <p class="text-muted small mb-1">MTC</p>
-                                <h6 class="card-title fw-semibold text-dark mb-3">Todo sobre el brevete por primera vez
-                                    o duplicado</h6>
-                                <a href="tramites/personales/tramitar-licencia-conducir"
-                                    class="btn btn-primary w-100 stretched-link">
-                                    Obtener Licencia
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 actionCard shadow">
-                            <div class="card-body text-center p-4">
-                                <i class="bi bi-briefcase display-4 text-primary mb-3"></i>
-                                <p class="text-muted small mb-1">SUNAT</p>
-                                <h6 class="card-title fw-semibold text-dark mb-3">Inicia tu negocio y gestiona tus
-                                    tributos fácil</h6>
-                                <a href="tramites/finanzas/consultar-ruc-sunat"
-                                    class="btn btn-primary w-100 stretched-link">
-                                    Consultar RUC
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 actionCard shadow">
-                            <div class="card-body text-center p-4">
-                                <i class="bi bi-airplane-engines display-4 text-primary mb-3"></i>
-                                <p class="text-muted small mb-1">Migraciones</p>
-                                <h6 class="card-title fw-semibold text-dark mb-3">Requisitos para viajar al extranjero
-                                    desde Perú</h6>
-                                <a href="tramites/migraciones/sacar-pasaporte-electronico-biometrico"
-                                    class="btn btn-primary w-100 stretched-link">
-                                    Tramitar Pasaporte
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__track">
+                    <span>DNI</span><span>·</span><span>Pasaporte</span><span>·</span><span>RUC</span><span>·</span><span>Brevete</span><span>·</span><span>AFP</span><span>·</span><span>Partida de nacimiento</span><span>·</span><span>Carné de extranjería</span><span>·</span><span>Beca 18</span><span>·</span><span>Citas SIS</span><span>·</span>
+                    <span>DNI</span><span>·</span><span>Pasaporte</span><span>·</span><span>RUC</span><span>·</span><span>Brevete</span><span>·</span><span>AFP</span><span>·</span><span>Partida de nacimiento</span><span>·</span><span>Carné de extranjería</span><span>·</span><span>Beca 18</span><span>·</span><span>Citas SIS</span><span>·</span>
                 </div>
-            </div>
-            <div class="meta">
-                <span class="meta__icon" aria-hidden="true">
-                    <i class="bi bi-check-circle iconColorgreen"></i>
-                </span>
-                DNI y RENIEC
-                <span class="meta__icon" aria-hidden="true">
-                    <i class="bi bi-check-circle iconColorgreen"></i>
-                </span>
-                Licencia de conducir
-                <span class="meta__icon" aria-hidden="true">
-                    <i class="bi bi-check-circle iconColorgreen"></i>
-                </span>
-                RUC y SUNAT
-                <span class="meta__icon" aria-hidden="true">
-                    <i class="bi bi-check-circle iconColorgreen"></i>
-                </span>
-                Pasaporte
-                <span class="meta__icon" aria-hidden="true">
-                    <i class="bi bi-check-circle iconColorgreen"></i>
-                </span>
-                Antecedentes
             </div>
         </div>
-
-        <!-- wave bottom -->
-        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0,64 C240,120 480,120 720,80 C960,40 1200,20 1440,40 L1440,120 L0,120 Z" fill="#f7f9fc"></path>
-        </svg>
     </main>
-    <section class="homeBlocks">
-        <div class="container">
 
-
+    <section class="statsBar">
+        <div class="container statsBar__grid">
+            <div class="reveal">
+                <div class="stat__num" data-count="18">0</div>
+                <div class="stat__label">Guías publicadas</div>
+            </div>
+            <div class="reveal">
+                <div class="stat__num" data-count="7">0</div>
+                <div class="stat__label">Categorías de trámite</div>
+            </div>
+            <div class="reveal">
+                <div class="stat__num" data-count="4">0</div>
+                <div class="stat__label">Fuentes oficiales enlazadas</div>
+            </div>
+            <div class="reveal">
+                <div class="stat__num" data-count="0">S/ 0</div>
+                <div class="stat__label">Costo por leer una guía</div>
+            </div>
         </div>
     </section>
-    <section class="featured">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2">
+
+    <section class="section2" id="categorias">
+        <div class="container">
+            <div class="section2__head reveal">
+                <div>
+                    <span class="section2__eyebrow">Índice</span>
+                    <h2 class="section2__title">Explora por categoría</h2>
                 </div>
-                <div class="col-lg-8">
-                    <header class="blockHead">
-                        <h2 class="blockHead__title">Explora por categoría</h2>
-                        <p class="blockHead__sub">Encuentra rápidamente la información que necesitas</p>
-                    </header>
-                    <div class="cats">
-                        <a class="catCard" href="/tramites/personales/">
-                            <div class="catCard__icon catCard__icon--blue" aria-hidden="true">
-                                <i class="bi bi-clipboard-check"></i>
-                            </div>
-                            <div class="catCard__title">Trámites Personales</div>
-                            <div class="catCard__desc">DNI, pasaporte, licencias y certificados</div>
-                            <div class="catCard__meta">
-                                <span>7 guías</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/finanzas/">
-                            <div class="catCard__icon catCard__icon--green" aria-hidden="true">
-                                <i class="bi bi-cash-coin"></i>
-                            </div>
-                            <div class="catCard__title">Finanzas y Beneficios</div>
-                            <div class="catCard__desc">AFP, ONP, SUNAT y bonos del Estado</div>
-                            <div class="catCard__meta">
-                                <span>2 guías</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/trabajo/">
-                            <div class="catCard__icon catCard__icon--blue" aria-hidden="true">
-                                <i class="bi bi-briefcase"></i>
-                            </div>
-                            <div class="catCard__title">Trabajo</div>
-                            <div class="catCard__desc">Contratos, liquidaciones, CTS y derechos laborales</div>
-                            <div class="catCard__meta">
-                                <span>2 guías</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/negocios/">
-                            <div class="catCard__icon catCard__icon--amber" aria-hidden="true">
-                                <i class="bi bi-buildings"></i>
-                            </div>
-                            <div class="catCard__title">Negocios</div>
-                            <div class="catCard__desc">Constitución de empresas, RUC y licencias municipales</div>
-                            <div class="catCard__meta">
-                                <span>2 guías</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/migraciones/">
-                            <div class="catCard__icon catCard__icon--purple" aria-hidden="true">
-                                <i class="bi bi-globe-americas"></i>
-                            </div>
-                            <div class="catCard__title">Migraciones</div>
-                            <div class="catCard__desc">Pasaporte, carné de extranjería y visas</div>
-                            <div class="catCard__meta">
-                                <span>3 guías</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/salud/">
-                            <div class="catCard__icon catCard__icon--red" aria-hidden="true">
-                                <i class="bi bi-heart-pulse"></i>
-                            </div>
-                            <div class="catCard__title">Salud y Seguros</div>
-                            <div class="catCard__desc">SIS, EsSalud y seguros médicos</div>
-                            <div class="catCard__meta">
-                                <span>1 guía</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        <a class="catCard" href="/tramites/educacion/">
-                            <div class="catCard__icon catCard__icon--amber" aria-hidden="true">
-                                <i class="bi bi-pencil-square"></i>
-                            </div>
-                            <div class="catCard__title">Educación y Empleo</div>
-                            <div class="catCard__desc">Becas, certificados y oportunidades laborales</div>
-                            <div class="catCard__meta">
-                                <span>1 guía</span>
-                                <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
+                <p class="section2__sub">Siete áreas, dieciocho guías, cero relleno.</p>
+            </div>
 
-                    </div>
-                    <div class="blockSplit">
-                        <div>
-                            <h2 class="blockSplit__title">Guías destacadas</h2>
-                            <p class="blockSplit__sub">Los trámites más consultados en Perú</p>
-                        </div>
-                        
-                    </div>
-                    <div class="guides" id="featuredGuides">
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto">Certificado
-                                        Único Laboral (CUL) – Cómo obtenerlo gratis en línea</a>
-                                </h2>
-                                <p class="postCard__desc">Obtén tu Certificado Único Laboral (Certiadulto o Certijoven)
-                                    de forma gratuita. Reúne antecedentes penales, judiciales y experiencia laboral en
-                                    un solo documento oficial.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 4-5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
+            <div class="catIndex">
+                <a class="catIndex__row reveal" href="/tramites/personales/">
+                    <span class="catIndex__num">01</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:var(--p-500)"></span>Personales</span>
+                    <span class="catIndex__count">7 guías</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/finanzas/">
+                    <span class="catIndex__num">02</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:var(--success)"></span>Finanzas y beneficios</span>
+                    <span class="catIndex__count">2 guías</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/trabajo/">
+                    <span class="catIndex__num">03</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:var(--coral)"></span>Trabajo</span>
+                    <span class="catIndex__count">2 guías</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/negocios/">
+                    <span class="catIndex__num">04</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:var(--warning)"></span>Negocios</span>
+                    <span class="catIndex__count">2 guías</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/migraciones/">
+                    <span class="catIndex__num">05</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:#5B4A9E"></span>Migraciones</span>
+                    <span class="catIndex__count">3 guías</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/salud/">
+                    <span class="catIndex__num">06</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:var(--danger)"></span>Salud y seguros</span>
+                    <span class="catIndex__count">1 guía</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+                <a class="catIndex__row reveal" href="/tramites/educacion/">
+                    <span class="catIndex__num">07</span>
+                    <span class="catIndex__name"><span class="catIndex__dot" style="background:#B5661F"></span>Educación y empleo</span>
+                    <span class="catIndex__count">1 guía</span>
+                    <span class="catIndex__arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/personales/renovar-dni-menores-edad">
-                                <i class="bi-person-badge placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Identidad</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/renovar-dni-menores-edad">Renovar DNI para Mayores de
-                                        17 Años – Requisitos y pasos</a>
-                                </h2>
-                                <p class="postCard__desc">Guía completa para renovar tu DNI azul o electrónico. Conoce
-                                    los costos, fotos permitidas y cómo realizar el trámite presencial o virtual en
-                                    RENIEC.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/finanzas/consultar-ruc-sunat">
-                                <i class="bi-shield-check placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Derechos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/finanzas/consultar-ruc-sunat">Consultar RUC en SUNAT – Cómo
-                                        verificar datos de una empresa o persona</a>
-                                </h2>
-                                <p class="postCard__desc">Utiliza la plataforma de Consulta Amigable de SUNAT para
-                                    verificar si un RUC está activo, habido y cuál es su régimen tributario. Evita
-                                    problemas en tus facturaciones.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/educacion/postular-beca-18-pronabec-convocatoria">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/educacion/postular-beca-18-pronabec-convocatoria">Beca 18 en Perú
-                                        – Requisitos, inscripción y cómo postular</a>
-                                </h2>
-                                <p class="postCard__desc">Descubre cómo acceder a una de las becas integrales del
-                                    Pronabec. Revisa el cronograma de postulación, los requisitos de rendimiento
-                                    académico y cómo acreditar la condición de vulnerabilidad.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 11 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/migraciones/sacar-pasaporte-electronico-biometrico">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/migraciones/sacar-pasaporte-electronico-biometrico">Tramitar
-                                        Pasaporte Peruano – Requisitos, costo y pasos</a>
-                                </h2>
-                                <p class="postCard__desc">Todo sobre el pasaporte electrónico biométrico: cómo pagar la
-                                    tasa en el Banco de la Nación, sacar cita virtual y los documentos necesarios para
-                                    adultos y menores.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 8 -10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/finanzas/consulta-afp">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/finanzas/consulta-afp">Consultar AFP en Perú – Cómo saber en qué
-                                        AFP estás afiliado</a>
-                                </h2>
-                                <p class="postCard__desc">¿No sabes a qué AFP perteneces? Aprende a consultar tu estado
-                                    de afiliación en el reporte oficial de la SBS y conoce si aportas a Integra, Prima,
-                                    Profuturo o Habitat.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <!-- Guías destacadas -->
-                    <div class="blockSplit">
-                        <div>
-                            <h2 class="blockSplit__title">Últimas publicaciones</h2>
-                            <p class="blockSplit__sub">Mantente al día con las nuevas guías</p>
-                        </div>
-                    </div>
-                    <div class="guides" id="featuredGuides">
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/personales/renovar-dni-menores-edad">
-                                <i class="bi-person-badge placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Identidad</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/renovar-dni-menores-edad">Renovar DNI para Mayores de
-                                        17 Años – Requisitos y pasos</a>
-                                </h2>
-                                <p class="postCard__desc">Guía completa para renovar tu DNI azul o electrónico. Conoce
-                                    los costos, fotos permitidas y cómo realizar el trámite presencial o virtual en
-                                    RENIEC.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/personales/obtener-partida-nacimiento">
-                                <i class="bi-file-earmark-text placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Documentos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/obtener-partida-nacimiento">Cómo tramitar la Partida de
-                                        Nacimiento de un Recién Nacido en Perú (2026)</a>
-                                </h2>
-                                <p class="postCard__desc">Descubre cómo solicitar tu acta o partida de nacimiento de
-                                    forma legal. Te explicamos los usos más comunes y los canales de atención
-                                    disponibles.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-orange"
-                                href="tramites/personales/tramitar-licencia-conducir">
-                                <i class="bi-car-front placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--orange">Transporte</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/tramitar-licencia-conducir">Licencia de Conducir en
-                                        Perú - Consulta, Requisitos y Examen</a>
-                                </h2>
-                                <p class="postCard__desc">Todo lo que necesitas saber para obtener tu brevete por
-                                    primera vez: exámenes médicos, reglas de tránsito y la prueba de manejo paso a paso.
-                                </p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-orange"
-                                href="tramites/personales/duplicado-licencia-conducir">
-                                <i class="bi-car-front placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--orange">Transporte</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/duplicado-licencia-conducir">Duplicado de Licencia de
-                                        Conducir – Cómo tramitarlo por pérdida o robo</a>
-                                </h2>
-                                <p class="postCard__desc">¿Perdiste tu brevete? Solicita el duplicado de tu licencia de
-                                    conducir electrónica o física de manera rápida y evita multas por conducir sin
-                                    documentos.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/personales/solicitar-duplicado-dni">
-                                <i class="bi-person-badge placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Identidad</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/solicitar-duplicado-dni">Duplicado de DNI en Perú –
-                                        Requisitos y cómo tramitarlo</a>
-                                </h2>
-                                <p class="postCard__desc">Manual rápido para obtener una copia idéntica de tu DNI
-                                    vigente por internet o en oficina. Conoce las tasas de pago en el Banco de la Nación
-                                    o Págalo.pe.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/personales/copia-certificada-partida-nacimiento">
-                                <i class="bi-file-earmark-text placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Documentos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/copia-certificada-partida-nacimiento">Copia Certificada
-                                        de Partida de Nacimiento – Cómo solicitarla en RENIEC</a>
-                                </h2>
-                                <p class="postCard__desc">Obtén una copia fiel de tu acta de nacimiento con validez
-                                    legal para trámites judiciales o administrativos. Disponible en plataformas
-                                    virtuales y MAC.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-red"
-                                href="tramites/personales/consultar-papeletas-transito">
-                                <i class="bi-exclamation-triangle placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--red">Vehículos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/personales/consultar-papeletas-transito">Consultar Papeletas de
-                                        Tránsito – Cómo verificar multas vehiculares</a>
-                                </h2>
-                                <p class="postCard__desc">Evita problemas al vender tu auto o renovar documentos.
-                                    Aprende a consultar papeletas pendientes en el SAT, SUTRAN y el Registro de Récord
-                                    del Conductor.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/salud/sacar-cita-sis">
-                                <i class="bi-heart-pulse placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/salud/sacar-cita-sis">Sacar Citas SIS – Cómo acceder a atención
-                                        médica</a>
-                                </h2>
-                                <p class="postCard__desc">Aprende a solicitar citas médicas en los centros de salud a
-                                    través del SIS. Conoce los canales virtuales, telefónicos y presenciales.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/finanzas/consulta-afp">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/finanzas/consulta-afp">Consultar AFP en Perú – Cómo saber en qué
-                                        AFP estás afiliado</a>
-                                </h2>
-                                <p class="postCard__desc">¿No sabes a qué AFP perteneces? Aprende a consultar tu estado
-                                    de afiliación en el reporte oficial de la SBS y conoce si aportas a Integra, Prima,
-                                    Profuturo o Habitat.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/finanzas/consultar-ruc-sunat">
-                                <i class="bi-shield-check placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Derechos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/finanzas/consultar-ruc-sunat">Consultar RUC en SUNAT – Cómo
-                                        verificar datos de una empresa o persona</a>
-                                </h2>
-                                <p class="postCard__desc">Utiliza la plataforma de Consulta Amigable de SUNAT para
-                                    verificar si un RUC está activo, habido y cuál es su régimen tributario.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto">Certificado
-                                        Único Laboral (CUL) – Cómo obtenerlo gratis en línea</a>
-                                </h2>
-                                <p class="postCard__desc">Obtén tu Certificado Único Laboral (Certiadulto o Certijoven)
-                                    de forma gratuita. Reúne antecedentes penales, judiciales y experiencia laboral.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 4-5 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/trabajo/obtener-constancia-de-trabajo">
-                                <i class="bi-shield-check placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Derechos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/trabajo/obtener-constancia-de-trabajo">Certificado o Constancia
-                                        Laboral – Cómo solicitarla a tu empleador</a>
-                                </h2>
-                                <p class="postCard__desc">Guía paso a paso sobre el procedimiento legal para solicitar
-                                    una constancia de trabajo en Perú.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 4 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/negocios/como-constituir-una-empresa-en-peru">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/negocios/como-constituir-una-empresa-en-peru">Constituir una
-                                        Empresa en Perú – Requisitos, pasos y costos</a>
-                                </h2>
-                                <p class="postCard__desc">Guía detallada para formalizar tu negocio: desde la
-                                    elaboración de la minuta hasta la inscripción en SUNARP.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 15 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/negocios/obtener-licencia-de-funcionamiento-municipal">
-                                <i class="bi-shield-check placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Derechos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/negocios/obtener-licencia-de-funcionamiento-municipal">Licencia de
-                                        Funcionamiento Municipal – Requisitos para abrir un negocio</a>
-                                </h2>
-                                <p class="postCard__desc">Aprende cómo obtener la autorización municipal para tu local.
-                                    Te explicamos los requisitos según el nivel de riesgo y zonificación.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 15 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/migraciones/tramitar-carne-de-extranjeria-peru">
-                                <i class="bi-person-badge placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/migraciones/tramitar-carne-de-extranjeria-peru">Obtener Carné de
-                                        Extranjería en Perú – Requisitos y trámite</a>
-                                </h2>
-                                <p class="postCard__desc">Guía completa para ciudadanos extranjeros sobre cómo obtener
-                                    el carné de extranjería. Requisitos para calidad migratoria de trabajador o
-                                    especial.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 8 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-green"
-                                href="tramites/migraciones/como-obtener-pasaporte-urgente-en-peru">
-                                <i class="bi-shield-check placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--green">Derechos</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/migraciones/como-obtener-pasaporte-urgente-en-peru">Pasaporte
-                                        urgente en Perú – Cómo tramitarlo en casos de emergencia</a>
-                                </h2>
-                                <p class="postCard__desc">¿Tienes un vuelo programado en menos de 48 horas? Conoce los
-                                    pasos para tramitar tu pasaporte de emergencia.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 8 - 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/migraciones/sacar-pasaporte-electronico-biometrico">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/migraciones/sacar-pasaporte-electronico-biometrico">Tramitar
-                                        Pasaporte Peruano – Requisitos, costo y pasos</a>
-                                </h2>
-                                <p class="postCard__desc">Todo sobre el pasaporte electrónico biométrico: cómo pagar la
-                                    tasa, sacar cita virtual y los documentos necesarios.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 8 - 10 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="postCard">
-                            <a class="postCard__media postCard__media--placeholder bg-blue"
-                                href="tramites/educacion/postular-beca-18-pronabec-convocatoria">
-                                <i class="bi-briefcase placeholder-icon" aria-hidden="true"></i>
-                                <span class="chip chip--floating chip--blue">Empleo</span>
-                            </a>
-                            <div class="postCard__body">
-                                <h2 class="postCard__title">
-                                    <a href="tramites/educacion/postular-beca-18-pronabec-convocatoria">Beca 18 en Perú
-                                        – Requisitos, inscripción y cómo postular</a>
-                                </h2>
-                                <p class="postCard__desc">Descubre cómo acceder a una de las becas integrales del
-                                    Pronabec. Revisa el cronograma de postulación y los requisitos académicos.</p>
-                                <div class="postCard__meta">
-                                    <span class="metaPill" title="Tiempo de lectura estimado"><i
-                                            class="bi bi-stopwatch"></i> 11 min de lectura</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+    <section class="section2" style="padding-top:0;">
+        <div class="container">
+            <div class="section2__head reveal">
+                <div>
+                    <span class="section2__eyebrow">Lo más buscado</span>
+                    <h2 class="section2__title">Guías destacadas</h2>
                 </div>
-                <div class="col-lg-2">
+            </div>
+            <div class="shelf reveal" id="shelfDestacadas">
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Empleo</span>
+                    <a class="shelfCard__title" href="tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto">Certificado Único Laboral (CUL) — gratis en línea</a>
+                    <p class="shelfCard__desc">Antecedentes penales, judiciales y experiencia laboral en un solo documento oficial.</p>
+                    <div class="shelfCard__foot"><span>4–5 min</span><span>Trabajo</span></div>
+                </article>
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Identidad</span>
+                    <a class="shelfCard__title" href="tramites/personales/renovar-dni-menores-edad">Renovar DNI para mayores de 17 años</a>
+                    <p class="shelfCard__desc">Costos, fotos permitidas y cómo hacerlo presencial o virtual en RENIEC.</p>
+                    <div class="shelfCard__foot"><span>10 min</span><span>Personales</span></div>
+                </article>
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Derechos</span>
+                    <a class="shelfCard__title" href="tramites/finanzas/consultar-ruc-sunat">Consultar RUC en SUNAT</a>
+                    <p class="shelfCard__desc">Verifica si un RUC está activo, habido y su régimen tributario.</p>
+                    <div class="shelfCard__foot"><span>2–4 min</span><span>Finanzas</span></div>
+                </article>
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Becas</span>
+                    <a class="shelfCard__title" href="tramites/educacion/postular-beca-18-pronabec-convocatoria">Beca 18: requisitos y postulación</a>
+                    <p class="shelfCard__desc">Cronograma, rendimiento académico y condición de vulnerabilidad.</p>
+                    <div class="shelfCard__foot"><span>11 min</span><span>Educación</span></div>
+                </article>
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Migraciones</span>
+                    <a class="shelfCard__title" href="tramites/migraciones/sacar-pasaporte-electronico-biometrico">Tramitar pasaporte peruano</a>
+                    <p class="shelfCard__desc">Pago de la tasa, cita virtual y documentos para adultos y menores.</p>
+                    <div class="shelfCard__foot"><span>8–10 min</span><span>Migraciones</span></div>
+                </article>
+                <article class="shelfCard">
+                    <span class="shelfCard__tag">Finanzas</span>
+                    <a class="shelfCard__title" href="tramites/finanzas/consulta-afp">Consultar tu AFP</a>
+                    <p class="shelfCard__desc">Integra, Prima, Profuturo o Hábitat — cómo saber dónde estás afiliado.</p>
+                    <div class="shelfCard__foot"><span>2–4 min</span><span>Finanzas</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="container trust__grid">
+            <div class="reveal">
+                <h2 class="trust__title">Un portal <em>independiente</em>, no el Estado — y lo decimos así de directo.</h2>
+            </div>
+            <div class="trust__list reveal">
+                <div class="trust__item">
+                    <i class="bi bi-link-45deg"></i>
+                    <div><strong>Fuentes oficiales</strong><span>Cada guía enlaza al portal .gob.pe donde se hace el trámite real.</span></div>
+                </div>
+                <div class="trust__item">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <div><strong>Revisión periódica</strong><span>Los costos y requisitos se vuelven a verificar cuando cambia la norma.</span></div>
+                </div>
+                <div class="trust__item">
+                    <i class="bi bi-shield-check"></i>
+                    <div><strong>Cero captura de datos</strong><span>No pedimos contraseñas, tarjetas ni claves SOL, nunca.</span></div>
+                </div>
+                <div class="trust__item">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <div><strong>Metodología pública</strong><span>Puedes leer exactamente cómo verificamos cada dato.</span></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="featured">
-        <div class="container">
 
-
+    <section class="ctaBand">
+        <div class="container reveal">
+            <h2 class="ctaBand__title">¿No encuentras<br /><em>tu trámite?</em></h2>
+            <button class="btnPrimary" id="cmdkTriggerBtn2" type="button" style="font-size:16px;padding:18px 30px;">
+                <i class="bi bi-search"></i> Buscar en las 18 guías
+            </button>
         </div>
     </section>
-    <section class="bg-slate-50 border-t border-slate-100 py-16">
+
+    <section class="section2" style="padding-top:0;padding-bottom:40px;">
         <div class="container">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="max-w-3xl">
-                    <h2 class="text-xl font-bold text-slate-800 mb-4">Tu guía de trámites en Perú 2026</h2>
-                    <div class="prose prose-slate prose-sm">
-                        <p>Bienvenido a la fuente más completa de información sobre trámites, servicios y consultas en
-                            Perú.
-                            Aquí encontrarás guías actualizadas paso a paso para realizar trámites de <strong>DNI y
-                                RENIEC</strong>,<strong>pasaportes</strong>, <strong>retiro de
-                                AFP</strong>,<strong>consultas SUNAT</strong>, <strong>SIS y EsSalud</strong>, y mucho
-                            más.
-                        </p>
-                        <p>Nuestro contenido está verificado y actualizado constantemente para brindarte información
-                            confiable. Ya sea que necesites renovar tu documento de identidad, consultar tu estado en la
-                            ONP, o conocer los requisitos para obtener una licencia de conducir, estamos aquí para
-                            ayudarte.
-                        </p>
-                    </div>
-                </div>
-                <div class="alert-aviso">
-                    <span class="icono">⚠️</span>
-                    <p>
-                        <strong>Aviso:</strong> TrámitesPeruanos.com es un portal informativo independiente.
-                        No estamos afiliados al gobierno peruano. La información puede cambiar sin previo aviso.
-                        Siempre verifica en las fuentes oficiales.
-                    </p>
-                </div>
+            <div class="alert-aviso reveal">
+                <span class="icono">⚠️</span>
+                <p>
+                    <strong>Aviso:</strong> TrámitesPeruanos.com es un portal informativo independiente.
+                    No estamos afiliados al gobierno peruano. La información puede cambiar sin previo aviso.
+                    Siempre verifica en las fuentes oficiales.
+                </p>
             </div>
         </div>
-
     </section>
-    <footer class="siteFooter" data-footer>
+
+    <footer class="siteFooter">
         <div class="container footer__grid">
-
-            <!-- Brand -->
             <div class="footerBrand">
                 <div class="footerBrand__top">
-                    <span class="footerBrand__icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                            <path
-                                d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5">
-                            </path>
-                            <path
-                                d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                            </path>
-                        </svg>
-                    </span>
                     <div class="footerBrand__name">TrámitesPeruanos</div>
                 </div>
-
-                <p class="footerBrand__desc">
-                    Tu guía confiable para trámites y servicios en Perú. Información actualizada y verificada.
-                </p>
-
-
+                <p class="footerBrand__desc">Guías independientes sobre trámites y servicios del Estado peruano.</p>
             </div>
-
-            <!-- Categories -->
             <div class="footerCol">
                 <div class="footerTitle">Categorías</div>
                 <ul class="footerList">
                     <li><a href="tramites/personales/">Personales</a></li>
-
                     <li><a href="tramites/finanzas/">Finanzas</a></li>
                     <li><a href="tramites/trabajo/">Trabajo</a></li>
                     <li><a href="tramites/negocios/">Negocios</a></li>
@@ -972,49 +315,103 @@
                     <li><a href="tramites/educacion/">Educación</a></li>
                 </ul>
             </div>
-
-            <!-- Popular -->
             <div class="footerCol">
-                <div class="footerTitle">Guías Populares</div>
+                <div class="footerTitle">Guías populares</div>
                 <ul class="footerList">
                     <li><a href="tramites/personales/renovar-dni-menores-edad">Cómo renovar DNI</a></li>
-                    <li><a href="tramites/finanzas/consulta-afp">Retiro AFP 2026</a></li>
-                    <li><a href="tramites/finanzas/consultar-ruc-sunat">Consulta SUNAT RUC</a></li>
+                    <li><a href="tramites/finanzas/consulta-afp">Consultar AFP</a></li>
+                    <li><a href="tramites/finanzas/consultar-ruc-sunat">Consulta RUC SUNAT</a></li>
                     <li><a href="tramites/salud/sacar-cita-sis">Citas SIS</a></li>
                     <li><a href="tramites/personales/tramitar-licencia-conducir">Licencia de conducir</a></li>
                 </ul>
             </div>
-
-            <!-- Contact -->
             <div class="footerCol">
-                <h4 class="footerCol__title">Información Legal</h4>
-                <ul class="footerCol__list" style="list-style: none; padding: 0;">
-                    <li><a href="/sobre-nosotros" style="text-decoration: none; color: inherit; font-size: 14px;">Sobre Nosotros</a></li>
-                    <li><a href="/metodologia" style="text-decoration: none; color: inherit; font-size: 14px;">Metodología</a></li>
-                    <li><a href="/aviso-legal"
-                            style="text-decoration: none; color: inherit; font-size: 14px;">Aviso Legal y
-                            Deslinde</a></li>
-                    <li><a href="/politica-privacidad"
-                            style="text-decoration: none; color: inherit; font-size: 14px;">Política
-                            de Privacidad</a></li>
-                    <li><a href="/contacto"
-                            style="text-decoration: none; color: inherit; font-size: 14px;">Contacto</a></li>
+                <div class="footerCol__title">Información legal</div>
+                <ul class="footerCol__list">
+                    <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="/metodologia">Metodología</a></li>
+                    <li><a href="/aviso-legal">Aviso Legal y Deslinde</a></li>
+                    <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </div>
-
         </div>
-
+        <div class="container">
+            <div class="footerWordmark">TRÁMITESPE</div>
+        </div>
         <div class="container footer__divider"></div>
-
         <div class="container footer__bottom">
-            <div class="footerCopy">
-                © 2026 TrámitesPeruanos. Todos los derechos reservados.
-            </div>
+            <div>© 2026 TrámitesPeruanos</div>
+            <div>Lima · Perú</div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <div class="cmdkOverlay" id="cmdkOverlay" role="dialog" aria-modal="true" aria-label="Buscar trámite">
+        <div class="cmdkBox">
+            <div class="cmdkInputRow">
+                <i class="bi bi-search"></i>
+                <input type="text" id="cmdkInput" placeholder="Busca tu trámite: DNI, pasaporte, RUC, brevete…" autocomplete="off">
+                <span class="esc">ESC</span>
+            </div>
+            <div class="cmdkList" id="cmdkList"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        (function () {
+            var toggle = document.getElementById('navToggle');
+            var menu = document.getElementById('menuPrincipal');
+            if (toggle) toggle.addEventListener('click', function () { menu.classList.toggle('show'); });
+
+            var nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 40) nav.classList.add('is-scrolled');
+                else nav.classList.remove('is-scrolled');
+            });
+
+            if (window.Lenis && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                var lenis = new Lenis();
+                function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+                requestAnimationFrame(raf);
+                if (window.gsap && window.ScrollTrigger) {
+                    lenis.on('scroll', ScrollTrigger.update);
+                    gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+                    gsap.ticker.lagSmoothing(0);
+                }
+            }
+
+            if (window.gsap) {
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.to('.hero2__title .word span', {
+                    y: '0%', duration: 0.9, ease: 'power4.out', stagger: 0.05, delay: 0.15
+                });
+                document.querySelectorAll('.reveal').forEach(function (el) {
+                    gsap.fromTo(el, { opacity: 0, y: 28 }, {
+                        opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+                        scrollTrigger: { trigger: el, start: 'top 88%' }
+                    });
+                });
+                document.querySelectorAll('.stat__num[data-count]').forEach(function (el) {
+                    var target = parseFloat(el.getAttribute('data-count'));
+                    var obj = { val: 0 };
+                    var prefix = el.textContent.trim().indexOf('S/') === 0 ? 'S/ ' : '';
+                    gsap.to(obj, {
+                        val: target, duration: 1.6, ease: 'power2.out',
+                        scrollTrigger: { trigger: el, start: 'top 90%' },
+                        onUpdate: function () { el.textContent = prefix + Math.round(obj.val); }
+                    });
+                });
+            } else {
+                document.querySelectorAll('.reveal, .hero2__title .word span').forEach(function (el) {
+                    el.style.opacity = 1; el.style.transform = 'none';
+                });
+            }
+        })();
+    </script>
+
     <script>
         (function () {
             var GUIAS = [
@@ -1038,52 +435,76 @@
                 { t: "Beca 18 Pronabec", c: "Educación", u: "tramites/educacion/postular-beca-18-pronabec-convocatoria" }
             ];
 
-            var input = document.getElementById("searchInput");
-            var results = document.getElementById("searchResults");
-            var btn = document.getElementById("searchBtn");
+            var overlay = document.getElementById('cmdkOverlay');
+            var input = document.getElementById('cmdkInput');
+            var list = document.getElementById('cmdkList');
+            var activeIndex = 0;
+            var currentItems = [];
 
-            function normalize(s) {
-                return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-            }
+            function normalize(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
 
-            function render(list) {
-                if (!list.length) {
-                    results.innerHTML = '<div class="search__empty">Sin resultados. Prueba con "DNI", "pasaporte" o "SUNAT".</div>';
-                    results.classList.add("is-open");
+            function renderList(items) {
+                currentItems = items;
+                activeIndex = 0;
+                if (!items.length) {
+                    list.innerHTML = '<div class="cmdkEmpty">Sin resultados. Prueba con "DNI", "pasaporte" o "SUNAT".</div>';
                     return;
                 }
-                results.innerHTML = list.slice(0, 6).map(function (g) {
-                    return '<a class="search__result" href="' + g.u + '">' + g.t + '<small>' + g.c + '</small></a>';
-                }).join("");
-                results.classList.add("is-open");
+                list.innerHTML = items.slice(0, 8).map(function (g, i) {
+                    return '<a class="cmdkItem' + (i === 0 ? ' is-active' : '') + '" href="' + g.u + '"><span>' + g.t + '</span><small>' + g.c + '</small></a>';
+                }).join('');
             }
 
-            function search() {
+            function filter() {
                 var q = normalize(input.value.trim());
-                if (!q) { results.classList.remove("is-open"); return; }
-                var matches = GUIAS.filter(function (g) { return normalize(g.t).indexOf(q) !== -1 || normalize(g.c).indexOf(q) !== -1; });
-                render(matches);
+                if (!q) { renderList(GUIAS); return; }
+                renderList(GUIAS.filter(function (g) { return normalize(g.t).indexOf(q) !== -1 || normalize(g.c).indexOf(q) !== -1; }));
             }
 
-            input.addEventListener("input", search);
-            input.addEventListener("focus", search);
-            btn.addEventListener("click", function () {
-                var q = normalize(input.value.trim());
-                var matches = GUIAS.filter(function (g) { return normalize(g.t).indexOf(q) !== -1 || normalize(g.c).indexOf(q) !== -1; });
-                if (matches.length) window.location.href = matches[0].u;
+            function openCmdk() {
+                overlay.classList.add('is-open');
+                renderList(GUIAS);
+                setTimeout(function () { input.focus(); }, 30);
+            }
+
+            function closeCmdk() {
+                overlay.classList.remove('is-open');
+                input.value = '';
+            }
+
+            ['cmdkTrigger', 'cmdkTriggerBtn', 'cmdkTriggerBtn2'].forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.addEventListener('click', openCmdk);
             });
-            input.addEventListener("keydown", function (e) {
-                if (e.key === "Enter") btn.click();
-            });
-            document.addEventListener("click", function (e) {
-                if (!document.getElementById("siteSearch").contains(e.target)) results.classList.remove("is-open");
+
+            overlay.addEventListener('click', function (e) { if (e.target === overlay) closeCmdk(); });
+            input.addEventListener('input', filter);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); openCmdk(); }
+                if (e.key === 'Escape') closeCmdk();
+                if (overlay.classList.contains('is-open')) {
+                    var items = list.querySelectorAll('.cmdkItem');
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault(); activeIndex = Math.min(activeIndex + 1, items.length - 1);
+                        items.forEach(function (it, i) { it.classList.toggle('is-active', i === activeIndex); });
+                    }
+                    if (e.key === 'ArrowUp') {
+                        e.preventDefault(); activeIndex = Math.max(activeIndex - 1, 0);
+                        items.forEach(function (it, i) { it.classList.toggle('is-active', i === activeIndex); });
+                    }
+                    if (e.key === 'Enter' && currentItems[activeIndex]) {
+                        window.location.href = currentItems[activeIndex].u;
+                    }
+                }
             });
         })();
     </script>
-    <div id="cookieNotice" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#16293E;color:#fff;padding:18px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);font-family:'Public Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;z-index:9999;display:none;">
-        <p style="margin:0 0 12px;">Usamos cookies propias y de Google AdSense para mostrar anuncios y medir el uso del sitio. Puedes conocer más en nuestra <a href="/politica-privacidad" style="color:#9CBFDC;">Política de Privacidad</a>.</p>
+
+    <div id="cookieNotice" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#17171D;color:#fff;padding:18px 20px;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.25);font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;z-index:9999;display:none;">
+        <p style="margin:0 0 12px;">Usamos cookies propias y de Google AdSense para mostrar anuncios y medir el uso del sitio. Puedes conocer más en nuestra <a href="/politica-privacidad" style="color:#A79EF7;">Política de Privacidad</a>.</p>
         <div style="display:flex;gap:10px;justify-content:flex-end;">
-            <button id="cookieAccept" type="button" style="background:#fff;color:#16293E;border:none;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer;">Aceptar</button>
+            <button id="cookieAccept" type="button" style="background:#fff;color:#17171D;border:none;border-radius:999px;padding:9px 18px;font-weight:600;cursor:pointer;">Aceptar</button>
         </div>
     </div>
     <script>
