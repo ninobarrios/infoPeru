@@ -797,6 +797,25 @@ img {
     flex-shrink: 0;
 }
 
+.catIndex__thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--r-sm);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.catIndex__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s var(--ease);
+}
+
+.catIndex__row:hover .catIndex__thumb img {
+    transform: scale(1.12);
+}
+
 .catIndex__desc {
     display: none;
 }
@@ -855,11 +874,34 @@ img {
     background: var(--paper);
     border: 1px solid var(--line);
     border-radius: var(--r-lg);
-    padding: 30px 26px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 18px;
     transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s ease;
+}
+
+.shelfCard__media {
+    height: 170px;
+    overflow: hidden;
+}
+
+.shelfCard__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s var(--ease);
+}
+
+.shelfCard:hover .shelfCard__media img {
+    transform: scale(1.06);
+}
+
+.shelfCard__body {
+    padding: 24px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
 }
 
 .shelfCard:hover {
@@ -908,6 +950,28 @@ img {
     background: var(--n-900);
     color: #fff;
     padding: clamp(80px, 11vw, 160px) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.trust__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .28;
+}
+
+.trust::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, var(--n-900) 0%, rgba(23, 23, 29, .88) 60%, var(--n-900) 100%);
+}
+
+.trust__grid {
+    position: relative;
 }
 
 .trust__grid {
@@ -1147,6 +1211,28 @@ img {
     color: #fff;
     padding: clamp(70px, 9vw, 120px) 0 clamp(50px, 6vw, 70px);
     text-shadow: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.catHero::before,
+.catHero_finance::before,
+.catHero_salud::before,
+.catHero_migraciones::before,
+.catHero_negocios::before,
+.catHero_trabajo::before,
+.catHero_education::before,
+.catHero_technology::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(13, 13, 17, .94) 0%, rgba(13, 13, 17, .82) 55%, rgba(13, 13, 17, .55) 100%);
+}
+
+.catHero .container {
+    position: relative;
 }
 
 .crumbs {
@@ -1275,9 +1361,27 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140px;
+    height: 160px;
     position: relative;
     text-decoration: none;
+    overflow: hidden;
+}
+
+.postCard__media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s var(--ease);
+}
+
+.postCard:hover .postCard__media img {
+    transform: scale(1.05);
+}
+
+.postCard__media .placeholder-icon {
+    display: none;
 }
 
 .postCard__body {
