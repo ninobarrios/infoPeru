@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad - Trámites Peruanos</title>
     <meta name="description" content="Política de privacidad detallada de Trámites Peruanos. Información sobre el tratamiento de datos según la Ley N° 29733 de Perú.">
-    <link rel="canonical" href="https://tramitesperuanos.online/politica-privacidad.html" />
+    <link rel="canonical" href="https://tramitesperuanos.online/politica-privacidad" />
     <meta name="robots" content="index, follow">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://tramitesperuanos.online/fotos/favicon.png" />
+    <link rel="apple-touch-icon" href="https://tramitesperuanos.online/fotos/favicon.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Política de Privacidad - Trámites Peruanos" />
+    <meta property="og:description" content="Política de privacidad de Trámites Peruanos." />
+    <meta property="og:image" content="https://tramitesperuanos.online/fotos/favicon.png" />
+    <meta name="google-site-verification" content="SjMVJDqneqzNdTag19NCD6vV3k25mTCfTCR1ZOQDuTQ" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950156439970490"
+     crossorigin="anonymous"></script>
+
     <style>
         :root {
-            --primary: #1e40af;
-            --primary-dark: #1e3a8a;
-            --text-main: #374151;
-            --text-light: #6b7280;
-            --bg-body: #f3f4f6;
+            --primary: #1F3B57;
+            --primary-dark: #16293E;
+            --text-main: #1B1E1C;
+            --text-light: #52564F;
+            --bg-body: #F3F4EF;
             --bg-card: #ffffff;
-            --accent: #3b82f6;
+            --accent: #3E6D95;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Public Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.7;
             background-color: var(--bg-body);
             color: var(--text-main);
@@ -44,7 +56,9 @@
         }
 
         h1 {
+            font-family: 'Source Serif 4', Georgia, serif;
             color: var(--primary);
+            font-weight: 600;
             font-size: 2.25rem;
             margin: 0 0 10px 0;
             letter-spacing: -0.025em;
@@ -148,9 +162,10 @@
             <h2>2. Tecnologías de Rastreo y Cookies</h2>
             <p>Este sitio utiliza cookies y tecnologías similares para mejorar la experiencia de navegación. Las cookies son pequeños archivos de datos que se almacenan en su navegador para:</p>
             <ul>
-                <li><strong>Análisis de Tráfico:</strong> Utilizamos Google Analytics para entender cuántas personas nos visitan desde regiones como Arequipa, Lima o el extranjero, y qué guías de trámites son las más útiles.</li>
                 <li><strong>Publicidad Personalizada:</strong> Utilizamos Google AdSense para financiar este portal informativo. Google utiliza cookies para mostrar anuncios basados en sus visitas previas a este u otros sitios web.</li>
             </ul>
+            <p>Si en el futuro incorporamos herramientas de analítica de tráfico (como Google Analytics), esta política será actualizada antes de su activación para reflejar dicho cambio.</p>
+            <p>Al ingresar al sitio verá un aviso de cookies en la parte inferior de la pantalla. Al presionar "Aceptar" registramos su consentimiento en el almacenamiento local de su navegador; puede revocarlo en cualquier momento borrando los datos de navegación de este sitio desde la configuración de su navegador.</p>
 
             <h2>3. Gestión de Publicidad (Google AdSense)</h2>
             <p>Google, como proveedor de terceros, utiliza cookies de publicidad para publicar anuncios en nuestro sitio. El uso de cookies publicitarias permite a Google y a sus socios publicar anuncios basados en las visitas de los usuarios a nuestro sitio web o a otros sitios de Internet.</p>
@@ -173,5 +188,26 @@
         </footer>
     </main>
 
+    <div id="cookieNotice" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#16293E;color:#fff;padding:18px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);font-family:'Public Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;z-index:9999;display:none;">
+        <p style="margin:0 0 12px;">Usamos cookies propias y de Google AdSense para mostrar anuncios y medir el uso del sitio. Puedes conocer más en nuestra <a href="/politica-privacidad" style="color:#9CBFDC;">Política de Privacidad</a>.</p>
+        <div style="display:flex;gap:10px;justify-content:flex-end;">
+            <button id="cookieAccept" type="button" style="background:#fff;color:#16293E;border:none;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer;">Aceptar</button>
+        </div>
+    </div>
+    <script>
+    (function () {
+        try {
+            if (!localStorage.getItem('cookieConsent')) {
+                var n = document.getElementById('cookieNotice');
+                if (n) n.style.display = 'block';
+            }
+        } catch (e) {}
+        var btn = document.getElementById('cookieAccept');
+        if (btn) btn.addEventListener('click', function () {
+            try { localStorage.setItem('cookieConsent', 'accepted'); } catch (e) {}
+            document.getElementById('cookieNotice').style.display = 'none';
+        });
+    })();
+    </script>
 </body>
 </html>

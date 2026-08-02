@@ -49,6 +49,9 @@
 
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -142,24 +145,48 @@
         <div class="hero__bgDots" aria-hidden="true"></div>
 
         <div class="container hero__inner">
-            <div class="pill">
-                <span class="pill__icon" aria-hidden="true">
-                    <i class="bi bi-circle-fill iconColorgreen"></i>
-                </span>
-                Actualizado 2026
+            <div class="heroFlex">
+                <div>
+                    <div class="pill">
+                        <span class="pill__icon" aria-hidden="true">
+                            <i class="bi bi-circle-fill iconColorgreen"></i>
+                        </span>
+                        Actualizado 2026
+                    </div>
+
+                    <h1 class="hero__title" style="text-align:left">
+                        Resuelve tu trámite<br />
+                        <span>sin perder la tarde en una fila</span>
+                    </h1>
+
+                    <p class="hero__subtitle" style="margin:0 0 26px;text-align:left">
+                        Requisitos, costos en soles y pasos exactos para tus trámites en RENIEC, SUNAT, MTC y
+                        Migraciones — explicados paso a paso.
+                    </p>
+
+                    <div class="search" id="siteSearch">
+                        <span class="search__icon" aria-hidden="true"><i class="bi bi-search"></i></span>
+                        <input type="text" class="search__input" id="searchInput" autocomplete="off"
+                            aria-label="Buscar trámite"
+                            placeholder="Busca tu trámite: DNI, pasaporte, RUC, brevete…">
+                        <button class="search__btn" id="searchBtn" type="button">Buscar</button>
+                        <div class="search__results" id="searchResults" role="listbox"></div>
+                    </div>
+                </div>
+
+                <div class="heroStub">
+                    <div class="heroStub__eyebrow">Expediente N.º 2026-017</div>
+                    <div class="heroStub__num">18</div>
+                    <div class="heroStub__label">guías paso a paso publicadas, con costos y enlaces oficiales
+                        verificados</div>
+                    <div class="heroStub__foot">
+                        <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                        Fuentes: RENIEC · SUNAT · MTC · Migraciones
+                    </div>
+                </div>
             </div>
 
-            <h1 class="hero__title">
-                Guías de Trámites y Servicios<br />
-                <span>en Perú 2026</span>
-            </h1>
-
-            <p class="hero__subtitle">
-                Encuentra información actualizada sobre DNI, pasaportes, AFP, SUNAT, bonos del
-                Estado y más. Paso a paso, requisitos y consejos prácticos.
-            </p>
-
-            <div class="container pb-5">
+            <div class="container pb-5" style="margin-top:44px;">
                 <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
 
                     <div class="col">
@@ -277,7 +304,7 @@
                             <div class="catCard__title">Trámites Personales</div>
                             <div class="catCard__desc">DNI, pasaporte, licencias y certificados</div>
                             <div class="catCard__meta">
-                                <span>2 guías</span>
+                                <span>7 guías</span>
                                 <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
                             </div>
                         </a>
@@ -321,11 +348,11 @@
                             <div class="catCard__title">Migraciones</div>
                             <div class="catCard__desc">Pasaporte, carné de extranjería y visas</div>
                             <div class="catCard__meta">
-                                <span>4 guías</span>
+                                <span>3 guías</span>
                                 <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
                             </div>
                         </a>
-                        <a class="catCard" href="/tramites/educacion/">
+                        <a class="catCard" href="/tramites/salud/">
                             <div class="catCard__icon catCard__icon--red" aria-hidden="true">
                                 <i class="bi bi-heart-pulse"></i>
                             </div>
@@ -336,7 +363,7 @@
                                 <span class="catCard__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
                             </div>
                         </a>
-                        <a class="catCard" href="/tramites/tecnologia/">
+                        <a class="catCard" href="/tramites/educacion/">
                             <div class="catCard__icon catCard__icon--amber" aria-hidden="true">
                                 <i class="bi bi-pencil-square"></i>
                             </div>
@@ -374,8 +401,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 4-5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -397,8 +422,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -420,8 +443,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -443,8 +464,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 11 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -466,8 +485,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 8 -10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -489,8 +506,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -520,8 +535,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -543,8 +556,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -566,8 +577,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        15,200</span>
                                 </div>
                             </div>
                         </article>
@@ -589,8 +598,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        5,430</span>
                                 </div>
                             </div>
                         </article>
@@ -612,8 +619,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        9,100</span>
                                 </div>
                             </div>
                         </article>
@@ -635,8 +640,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        6,750</span>
                                 </div>
                             </div>
                         </article>
@@ -658,8 +661,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        22,100</span>
                                 </div>
                             </div>
                         </article>
@@ -680,8 +681,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -703,8 +702,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -725,8 +722,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 2 - 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -747,8 +742,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 4-5 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -769,8 +762,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 4 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -791,8 +782,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 15 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -813,8 +802,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 15 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -836,8 +823,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 8 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -858,8 +843,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 8 - 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        8,920</span>
                                 </div>
                             </div>
                         </article>
@@ -880,8 +863,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 8 - 10 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -902,8 +883,6 @@
                                 <div class="postCard__meta">
                                     <span class="metaPill" title="Tiempo de lectura estimado"><i
                                             class="bi bi-stopwatch"></i> 11 min de lectura</span>
-                                    <span class="metaPill" title="Visualizaciones totales"><i class="bi bi-eye"></i>
-                                        12,350</span>
                                 </div>
                             </div>
                         </article>
@@ -1001,7 +980,7 @@
                     <li><a href="tramites/personales/renovar-dni-menores-edad">Cómo renovar DNI</a></li>
                     <li><a href="tramites/finanzas/consulta-afp">Retiro AFP 2026</a></li>
                     <li><a href="tramites/finanzas/consultar-ruc-sunat">Consulta SUNAT RUC</a></li>
-                    <li><a href="tramites/salud/sacar-citas-sis">Citas SIS</a></li>
+                    <li><a href="tramites/salud/sacar-cita-sis">Citas SIS</a></li>
                     <li><a href="tramites/personales/tramitar-licencia-conducir">Licencia de conducir</a></li>
                 </ul>
             </div>
@@ -1010,13 +989,15 @@
             <div class="footerCol">
                 <h4 class="footerCol__title">Información Legal</h4>
                 <ul class="footerCol__list" style="list-style: none; padding: 0;">
-                    <li><a href="/aviso-legal.html"
+                    <li><a href="/sobre-nosotros" style="text-decoration: none; color: inherit; font-size: 14px;">Sobre Nosotros</a></li>
+                    <li><a href="/metodologia" style="text-decoration: none; color: inherit; font-size: 14px;">Metodología</a></li>
+                    <li><a href="/aviso-legal"
                             style="text-decoration: none; color: inherit; font-size: 14px;">Aviso Legal y
                             Deslinde</a></li>
-                    <li><a href="/politica-privacidad.html"
+                    <li><a href="/politica-privacidad"
                             style="text-decoration: none; color: inherit; font-size: 14px;">Política
                             de Privacidad</a></li>
-                    <li><a href="/contacto.html"
+                    <li><a href="/contacto"
                             style="text-decoration: none; color: inherit; font-size: 14px;">Contacto</a></li>
                 </ul>
             </div>
@@ -1034,6 +1015,92 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        (function () {
+            var GUIAS = [
+                { t: "Renovar DNI para mayores de 17 años", c: "Personales", u: "tramites/personales/renovar-dni-menores-edad" },
+                { t: "Duplicado de DNI", c: "Personales", u: "tramites/personales/solicitar-duplicado-dni" },
+                { t: "Partida de nacimiento de un recién nacido", c: "Personales", u: "tramites/personales/obtener-partida-nacimiento" },
+                { t: "Copia certificada de partida de nacimiento", c: "Personales", u: "tramites/personales/copia-certificada-partida-nacimiento" },
+                { t: "Licencia de conducir (brevete) por primera vez", c: "Personales", u: "tramites/personales/tramitar-licencia-conducir" },
+                { t: "Duplicado de licencia de conducir", c: "Personales", u: "tramites/personales/duplicado-licencia-conducir" },
+                { t: "Consultar papeletas de tránsito", c: "Personales", u: "tramites/personales/consultar-papeletas-transito" },
+                { t: "Consultar AFP", c: "Finanzas", u: "tramites/finanzas/consulta-afp" },
+                { t: "Consultar RUC en SUNAT", c: "Finanzas", u: "tramites/finanzas/consultar-ruc-sunat" },
+                { t: "Certificado Único Laboral (CUL)", c: "Trabajo", u: "tramites/trabajo/certificado-unico-laboral-certijoven-certiadulto" },
+                { t: "Constancia de trabajo", c: "Trabajo", u: "tramites/trabajo/obtener-constancia-de-trabajo" },
+                { t: "Constituir una empresa en Perú", c: "Negocios", u: "tramites/negocios/como-constituir-una-empresa-en-peru" },
+                { t: "Licencia de funcionamiento municipal", c: "Negocios", u: "tramites/negocios/obtener-licencia-de-funcionamiento-municipal" },
+                { t: "Pasaporte urgente (emergencia)", c: "Migraciones", u: "tramites/migraciones/como-obtener-pasaporte-urgente-en-peru" },
+                { t: "Pasaporte electrónico biométrico", c: "Migraciones", u: "tramites/migraciones/sacar-pasaporte-electronico-biometrico" },
+                { t: "Carné de extranjería", c: "Migraciones", u: "tramites/migraciones/tramitar-carne-de-extranjeria-peru" },
+                { t: "Sacar cita SIS", c: "Salud", u: "tramites/salud/sacar-cita-sis" },
+                { t: "Beca 18 Pronabec", c: "Educación", u: "tramites/educacion/postular-beca-18-pronabec-convocatoria" }
+            ];
+
+            var input = document.getElementById("searchInput");
+            var results = document.getElementById("searchResults");
+            var btn = document.getElementById("searchBtn");
+
+            function normalize(s) {
+                return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+            }
+
+            function render(list) {
+                if (!list.length) {
+                    results.innerHTML = '<div class="search__empty">Sin resultados. Prueba con "DNI", "pasaporte" o "SUNAT".</div>';
+                    results.classList.add("is-open");
+                    return;
+                }
+                results.innerHTML = list.slice(0, 6).map(function (g) {
+                    return '<a class="search__result" href="' + g.u + '">' + g.t + '<small>' + g.c + '</small></a>';
+                }).join("");
+                results.classList.add("is-open");
+            }
+
+            function search() {
+                var q = normalize(input.value.trim());
+                if (!q) { results.classList.remove("is-open"); return; }
+                var matches = GUIAS.filter(function (g) { return normalize(g.t).indexOf(q) !== -1 || normalize(g.c).indexOf(q) !== -1; });
+                render(matches);
+            }
+
+            input.addEventListener("input", search);
+            input.addEventListener("focus", search);
+            btn.addEventListener("click", function () {
+                var q = normalize(input.value.trim());
+                var matches = GUIAS.filter(function (g) { return normalize(g.t).indexOf(q) !== -1 || normalize(g.c).indexOf(q) !== -1; });
+                if (matches.length) window.location.href = matches[0].u;
+            });
+            input.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") btn.click();
+            });
+            document.addEventListener("click", function (e) {
+                if (!document.getElementById("siteSearch").contains(e.target)) results.classList.remove("is-open");
+            });
+        })();
+    </script>
+    <div id="cookieNotice" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#16293E;color:#fff;padding:18px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);font-family:'Public Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;z-index:9999;display:none;">
+        <p style="margin:0 0 12px;">Usamos cookies propias y de Google AdSense para mostrar anuncios y medir el uso del sitio. Puedes conocer más en nuestra <a href="/politica-privacidad" style="color:#9CBFDC;">Política de Privacidad</a>.</p>
+        <div style="display:flex;gap:10px;justify-content:flex-end;">
+            <button id="cookieAccept" type="button" style="background:#fff;color:#16293E;border:none;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer;">Aceptar</button>
+        </div>
+    </div>
+    <script>
+    (function () {
+        try {
+            if (!localStorage.getItem('cookieConsent')) {
+                var n = document.getElementById('cookieNotice');
+                if (n) n.style.display = 'block';
+            }
+        } catch (e) {}
+        var btn = document.getElementById('cookieAccept');
+        if (btn) btn.addEventListener('click', function () {
+            try { localStorage.setItem('cookieConsent', 'accepted'); } catch (e) {}
+            document.getElementById('cookieNotice').style.display = 'none';
+        });
+    })();
+    </script>
 </body>
 
 </html>

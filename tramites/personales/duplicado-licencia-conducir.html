@@ -96,9 +96,12 @@
     <meta property="og:image" content="https://tramitesperuanos.online/fotos/favicon.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="../../estilosMain.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../estilosMain.css" />
     <link rel="icon" type="image/png" href="https://tramitesperuanos.online/fotos/favicon.png" />
     <link rel="apple-touch-icon" href="https://tramitesperuanos.online/fotos/favicon.png">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1950156439970490"
@@ -693,7 +696,7 @@
                                             Pasaporte Peruano 2026: Guía completa MIGRACIONES
                                         </a>
                                     </li>
-                                    </ol>
+                                    </ul>
                             </div>
                         </div>
 
@@ -785,7 +788,7 @@
                     <li><a href="../../tramites/personales/renovar-dni-menores-edad">Cómo renovar DNI</a></li>
                     <li><a href="../../tramites/finanzas/consulta-afp">Retiro AFP 2026</a></li>
                     <li><a href="../../tramites/finanzas/consultar-ruc-sunat">Consulta SUNAT RUC</a></li>
-                    <li><a href="../../tramites/salud/sacar-citas-sis">Citas SIS</a></li>
+                    <li><a href="../../tramites/salud/sacar-cita-sis">Citas SIS</a></li>
                     <li><a href="../../tramites/personales/tramitar-licencia-conducir">Licencia de conducir</a></li>
                 </ul>
             </div>
@@ -794,6 +797,8 @@
             <div class="footerCol">
                 <h4 class="footerCol__title">Información Legal</h4>
                 <ul class="footerCol__list" style="list-style: none; padding: 0;">
+                    <li><a href="/sobre-nosotros" style="text-decoration: none; color: inherit; font-size: 14px;">Sobre Nosotros</a></li>
+                    <li><a href="/metodologia" style="text-decoration: none; color: inherit; font-size: 14px;">Metodología</a></li>
                     <li><a href="/aviso-legal" style="text-decoration: none; color: inherit; font-size: 14px;">Aviso
                             Legal y
                             Deslinde</a></li>
@@ -869,6 +874,27 @@
         });
     </script>
 
+    <div id="cookieNotice" style="position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#16293E;color:#fff;padding:18px 20px;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.25);font-family:'Public Sans',system-ui,sans-serif;font-size:14px;line-height:1.5;z-index:9999;display:none;">
+        <p style="margin:0 0 12px;">Usamos cookies propias y de Google AdSense para mostrar anuncios y medir el uso del sitio. Puedes conocer más en nuestra <a href="/politica-privacidad" style="color:#9CBFDC;">Política de Privacidad</a>.</p>
+        <div style="display:flex;gap:10px;justify-content:flex-end;">
+            <button id="cookieAccept" type="button" style="background:#fff;color:#16293E;border:none;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer;">Aceptar</button>
+        </div>
+    </div>
+    <script>
+    (function () {
+        try {
+            if (!localStorage.getItem('cookieConsent')) {
+                var n = document.getElementById('cookieNotice');
+                if (n) n.style.display = 'block';
+            }
+        } catch (e) {}
+        var btn = document.getElementById('cookieAccept');
+        if (btn) btn.addEventListener('click', function () {
+            try { localStorage.setItem('cookieConsent', 'accepted'); } catch (e) {}
+            document.getElementById('cookieNotice').style.display = 'none';
+        });
+    })();
+    </script>
 </body>
 
 </html>
